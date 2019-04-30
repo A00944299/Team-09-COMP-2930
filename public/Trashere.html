@@ -38,172 +38,10 @@
 <body>
 	<div id="top" >
 		<nav class="navbar fixed-top navbar-light bg-white">
-            <li><a href="#"><img src = "../Pictures/logo.png" id = "logo"></a><a href="#" class="navbar-brand glyphicon glyphicon-phone" id="homepage">TRASHere</a></li>
+            <li><a href="#"></a><a href="#" class="navbar-brand glyphicon glyphicon-phone" id="homepage">TRASHere</a></li>
 			 <li><a href="#point" class="navbar-brand" id="about-us">About Us</a></li>
 		</nav>
 	</div>
-
-	<!-- First Image -->
-	<div class="bgimg-1">
-		<h1 class = "middletext">Testausdhuasdgjasd</h1>
-    </div>
-        <h1 class="middletext"><br/></h1>
-	</div>
-
-    <!-- Login console-->
-    <script type="text/javascript" src = "./js/login.js"></script>
-
-    <!-- device -->
-    <p class="devicebtnpara">We Buy Your Device!</p>
-    <button class="btn btn-light deviceBtn" id="device-btn1" type="button"><img src = "../Pictures/cellphoneicon.png" id = "img3"><br/>Phone</button><br/>
-
-    <!-- Trigger/Open The Modal -->
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-    <div class="modal-content">
-    <span class="close">&times;</span>
-		<!--Computer brand 1~5 -->
-
-		<div id="brandInfo" class="btn-group">
-				<button class="btn btn-light computer-brand-btn" id="brand1" type="button"></button>
-				<button class="btn btn-light computer-brand-btn" id="brand2" type="button"></button>
-				<button class="btn btn-light computer-brand-btn" id="brand3" type="button"></button>
-				<button class="btn btn-light computer-brand-btn" id="brand4" type="button"></button>
-				<button class="btn btn-light computer-brand-btn" id="brand5"  type="button"></button>
-		</div>
-
-
-
-    <!-- search for the model -->
-    <div id = "modelsearch">
-        Model: <input id="input" class = "textfield" type = "search" name = "modelType" title = "modelofdevice" placeholder = "Enter Device Model (ex. Iphone 7)" required = "required"/>
-        <br/><br/>
-        <input type="submit" id="form-submit" value="Submit" class= "btn btn-light"><br/>
-    </div>
-
-     <div class="row">
-        <div class="col-75">
-            <div class="whole">
-                <!-- payment information form that is asking user to put personal information -->
-                <form>
-                    <h3>Customer Information</h3>
-                        <div class="row">
-                            <div class="col-50">
-                                <h5>Billing Address</h5>
-                                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                                <input type="text" id="billing-name" name="firstname" placeholder="First and Last Name">
-                                <label for="phonenumber"><i class="fas fa-phone"></i> Phone Number</label>
-                                <input type="text" id="billing-phone" name="phone" placeholder="XXX-XXX-XXXX">
-                                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                                <input type="text" id="billing-address" name="address" placeholder="542 W. 15th Street">
-                                <label for="city"><i class="fa fa-institution"></i> City</label>
-                                <input type="text" id="billing-city" name="city" placeholder="Vancouver">
-
-                            <div class="row">
-                                <div class="col-50">
-                                    <label for="state">Province</label>
-                                    <input type="text" id="billing-province" name="province" placeholder="BC">
-                                </div>
-                            <div class="col-50">
-                                <label for="zip">Postal code</label>
-                                <input type="text" id="billing-postalcode" name="postalcode" placeholder="V5H 3H2">
-                            </div>
-                            </div>
-                            </div>
-
-	                       <div class="col-50">
-	                           <h5>Select How you would like to be paid</h5>
-	                           <label for="fname">Accepted Methods</label>
-	                           <div class="icon-container">
-	                               <label  class="label--checkbox1">
-                                        <span><input type="radio" name="checkbox"></span>
-                                         <img src="./Pictures/paypallogo.png" alt="paypallogo">
-                                    </label>
- 	                               <label class="label--checkbox2">
-                                        <span><input type="radio" name="checkbox"></span>
-                                         <img src="https://gorecell.ca/wp-content/themes/go-recell/assets/img/interac.svg" alt="interaclogo">
-                                    </label>
-                                    <label class="label--checkbox3">
-                                        <span><input type="radio" name="checkbox"></span>
-                                        <p>Cheque</p>
-                                    </label>
-	                           </div>
-	                       <div id = "addressbox">
-	                           <input type="text" id="billing-email" placeholder="Email Address">
-	                       </div>
-	                       </div>
-
-	                   </div>
-	               <input type="submit" id="checkout" value="Continue to checkout" class="btn">
-	           </form>
-	     </div>
-	   </div>
-	       <div class="col-25">
-	           <div class="container" id="shopping">
-	               <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i></span></h4>
-	               <p id="total">Total :</p>
-	           </div>
-	       </div>
-	 </div>
-
-
-  </div>
-</div>
-
-	<!-- Second Image with how we process to salvage the devices.-->
-	<div class="bgimg-2">
-		<h1 class = "middletext">Selling: How it Works</h1>
-        <div id="firstcolumn">
-            <h2>Search Device Model</h2>
-            <p>Simply find your device company and model by searching it up.</p>
-            <br/>
-            <img src="../Pictures/shipping.png" alt="shipdevice">
-            <br/><br/><br/>
-            <h2>Get Paid!</h2>
-            <p>Get paid throug paypal, interac, and cheque as soon as we receive your device.</p>
-            <br/><br/>
-        </div>
-        <div id="middlecolumn">
-            <img src="../Pictures/number-one-in-a-circle.png" alt="one">
-            <br/>
-            <img src="../Pictures/number-two-in-a-circle.png" alt="two">
-            <br/>
-            <img src="../Pictures/number-three-in-a-circle.png" alt="three">
-        </div>
-        <div id="lastcolumn">
-            <img class="lastcolimg1" src="../Pictures/devicechek.png" alt="deviceinfoandcondition">
-            <br/>
-            <h2>Ship Your Device</h2>
-            <p>Don't worry! Shipping is free! Send your device with provided shiping label and kit.</p>
-            <br/><br/><br/>
-            <img class="lastcolimg2" src="../Pictures/getpaid.png" alt="payment">
-        </div>
-
-	</div>
-	<!-- Company's mission and frequently asked questions. -->
-	<div class="fields" id="content2">
-		<h2>Our Mission</h2>
-		<p>Green Plus will be a leader in the collection, processing and marketing of recyclable mobiles mostly in Vancouver and Toronto through innovative material recovery with cooperation of other companies. We will measure our success not by how many customers and products we serve, but by how we serve our customers - we will strive to meet or exceed the expectations of each customer.</p>
-        <br/><br/>
-        <!-- faq -->
-        <h2 style = "text-align: center">FAQs</h2>
-        <button class="accordion">How do I send my device?</button>
-            <div class="panel">
-                <p>It’s simple! Once you have accepted a quote, we will mail you a free shipping kit (secure padded envelope + shipping label) so that you can pack and send us your phone. It will take about 3 to 6 business days to be delivered to you depending on your location. Once you have received it, simply pack your device in the envelope and drop it off at your nearest Canada Post office. You will receive a confirmation as soon as we have received and inspected it.</p>
-            </div>
-        <button class="accordion">How long does it take for me to get paid once you've received my device?</button>
-            <div class="panel">
-                <p>Once your device arrives at our warehouse, it typically takes about 1 to 2 business day for the payment to be issued. You can choose to be paid by PayPal or Interac E-Tansfer, which are the quickest, or by cheque mailed to you.</p>
-            </div>
-        <button class="accordion">What do I need to include with the phone when I send it to your company?</button>
-            <div class="panel">
-                <p>We only need the device and battery. If you have the charger or other optional accessories, you are most welcome to include them in the package.</p>
-            </div>
-        <button class="accordion">I live nearby, can I bring my device in person?</button>
-            <div class="panel">
-                <p>Yes you can! Montreal customers are welcome to stop by our offices in 3600 Willingdon Avenue, Burnaby BC, V5H 3H2. Simply give us a call to schedule an appointment (Mon-Fri, 9:00 AM to 5:00 PM).</p>
-            </div>
-    </div>
 
 
 	<!-- About us content-->
@@ -227,6 +65,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+    <!-- JavaScript is linked here -->
 	<script type = "text/javascript" src = "./js/buttons.js"></script>
     <script type = "text/javascript" src = "./js/scroll.js"></script>
     <script type = "text/javascript" src = "./js/accordion.js"></script>
