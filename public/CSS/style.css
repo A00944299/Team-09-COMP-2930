@@ -7,31 +7,69 @@
 	}
 	#top{
 		width: 100%;
-		color: white;
-		background: white;
+        color: #D1C8C8;
+		background: #D1C8C8;
 		font-weight: bold;
+        padding-bottom: 13px;
 	}
 
-    #mapid { height: 180px; width: 300px;}
-
     #content {
+        padding-top: 3px;
         text-align: center;
-    }
-    #icon {
-        background: #DEDDDD
+        background: #DEDDDD;
     }
     #homepage{
 		float: left;
         margin-top: 17px;
         margin-left: 10px;
-        font-size: 1.5em;
+        font-size: 1.1em;
 	}
     #about-us {
         float: right;
         text-align: center;
         margin-right: 10px;
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
+
+    #row {            
+        text-align: center;
+        display: inline-block;
+        
+    }
+    .circle {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        font-size: 12pt;
+        line-height: 90px;
+        text-align: center;
+        
+    }
+    .recycle {
+        background: #3642E4;
+        color: #fff;
+    }
+    .garb {
+        background: #000;
+        color: #fff;
+    }
+    .paper {
+        background: #36E442;
+        color: #000;
+    }
+    .comp {
+        background: #FDFD79;
+        color: #000;
+    }
+
+    #searchbar {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .search {
+
+    }
+
 	.middletext {
 		line-height: 300px;
 		vertical-align: middle;
@@ -58,7 +96,7 @@
     }
 
 	.fields {
-		margin: 5%;
+		margin: 1%;
 	}
     .copyright{
         text-align: center;
