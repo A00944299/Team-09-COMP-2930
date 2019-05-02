@@ -10,26 +10,31 @@
 <body>
 	<div id="top">
 		<nav>
-            <li><a href="./landing.html" id="homepage"><img src="../Pictures/Capture.jpg" alt="Trashere"/></a></li>
+            <li><a href="./landing.html" id="homepage"><img src="../Pictures/Capture.png" alt="Trashere"/></a></li>
 			 <li><a href="#point" id="about-us">About Us</a></li>
 		</nav>
 	</div>
 
+    <!-- the middle content box -->
+    
     <div id="content">
         <div>
-            <img src="../Pictures/Capture.jpg" alt="TRASHere">
+            <img src="../Pictures/Capture.png" alt="TRASHere">
         </div>
         <p>Choose a type of trash to throw away</p>
         <div id="row">
-            <div class="circle recycle">Recycling</div>
-            <div class="circle garb">Garbage</div>
-            <div class="circle paper">Paper</div>
-            <div class="circle comp">Compost</div>
+            <div class="circle recycle col">Recycling</div>
+            <div class="circle garb col">Garbage</div>
+            <div class="circle paper col">Paper</div>
+            <div class="circle comp col">Compost</div>
         </div>
     </div>
     
-    <div id="searchbar">
-        <input type="text" class="search" placeholder="Search bar for other trash types...">
+    <div id="searchbar" class="bar">
+        <input type="text" class="search" placeholder="Search for other trash types">
+        <button type="submit" class="searchButton" value="Submit">
+            Submit <!-- later put search icon here -->
+        </button>
     </div>
 
 	<!-- footer -->
