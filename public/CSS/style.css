@@ -1,4 +1,4 @@
-body, h1, h2, h3, h4, h5, h6 {
+    body, h1, h2, h3, h4, h5, h6 {
 		font-family: "Lato", sans-serif;
 	}
 	body, html {
@@ -11,32 +11,23 @@ body, h1, h2, h3, h4, h5, h6 {
 		background: white;
 		font-weight: bold;
 	}
+    #content {
+    
+    }
+    #icon {
+        text-align: center;
+        background: #DEDDDD
+    }
+#about-us {
+    
+}
 	.middletext {
 		line-height: 300px;
 		vertical-align: middle;
 		text-align: center;
 		color: black;
 	}
-	.navbar li a:hover {
-    background-color: #DAEDDB;
-		color: #fff;
-	}
-	.navbar-fixed {
-		position: fixed;
-		z-index: 1;
-	}
-	.fields {
-		margin: 5%;
-	}
-    .copyright{
-        text-align: center;
-        color: #DAD8D1;
-    }
-	#about-us{
-		float: right;
-        margin-right: 10px;
-		text-align: center;
-	}
+
 	#homepage{
 		float: left;
 		text-align: center;
@@ -51,400 +42,11 @@ body, h1, h2, h3, h4, h5, h6 {
 		width: 80%;
 		display: inline;
 	}
-    .devicebtnpara{
-         margin-bottom: -2%;
-         font-size: 25pt;
-         text-align: center;
-         margin-top: 5%;
-     }
-     #device-btn1{
-         margin-bottom: 7%;
-         margin-top: 6%;
-         margin-left: 44%;
-     }
-	#brandInfo {
-		margin-top: 25px;
-	}
-
-	/* About Section */
-	#about {
-		font-size: 1.4em;
-	}
-    #logo{
-        width: 30%;
-        float: left;
-    }
-    #img1{
-        width: 70%;
-        height: 55%;
-        margin-bottom: 10px;
-        filter: opacity(25%);
-    }
-    #img2, #img3{
-        width: 70%;
-        height: 55%;
-        margin-bottom: 10px;
-        filter: opacity(30%);
-    }
-    #img4{
-        width: 80%;
-        height: 60%;
-        margin-bottom: 4px;
-        filter: opacity(30%);
-    }
-
-	/* Table of Devices*/
-	#tableOfDevices {
-		float: right;
-		display: none;
-		padding: 8px;
-		border: black solid 2px;
-		border-radius: 5px;
-		table-layout: auto;
-	}
-	/* Create a Parallax Effect */
-	.bgimg-1, .bgimg-2, .bgimg-3 {
-		opacity: 0.7;
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	.bgimg-1 {
-		background-image: url('https://farm6.staticflickr.com/5542/30017499820_49927254e0_k.jpg');
-		min-height: 850px;
-		background-size: 100% 100%;
-		transition: 1s ease-in;
-	}
-
-	.bgimg-1:hover {
-		background-size: 105% 105%;
-	}
-
-	/* Second image */
-	.bgimg-2 {
-		background-image: url("../../Pictures/processbackground.png");
-		min-height: 850px;
-        min-width: auto;
-		filter: grayscale(50%);
-		background-size: 100% 100%;
-		transition: 1s ease-in;
-	}
-
-	.bgimg-2:hover {
-		background-size: 105% 105%;
-	}
-
-    #firstcolumn{
-        width: 33%;
-        margin-left: 64px;
-        color: black;
-        float: left;
-    }
-    #firstcolumn img{
-        margin-left: 130px;
-        width: 33%;
-    }
-    #firstcolumn h2, p{
-        margin-left: 50px;
-        margin-top: 10px;
-    }
-    #middlecolumn{
-        width: 20%;
-        float: left;
-    }
-    #middlecolumn img{
-        width: 30%;
-        margin-bottom: 87px;
-        margin-left: 35%;
-    }
-    #lastcolumn{
-        width: 33%;
-				float:left;
-        color: black;
-    }
-   .lastcolimg1{
-        width: 30%;
-        margin-left: 33%;
-        margin-bottom: 53px;
-    }
-    .lastcolimg2{
-        width: 30%;
-        margin-left: 34%;
-        margin-bottom: 53px;
-        margin-top: -36px;
-    }
-    #lastcolumn h2, p{
-        margin-left: 43px;
-    }
-
-
-	/* Third image */
-	.bgimg-3 {
-		background-image: url("https://www.publicdomainpictures.net/pictures/30000/nahled/solid-green-background.jpg");
-        filter: grayscale(30%);
-		min-height: 450px;
-	}
-    .signupheading{
-         line-height: 300px;
- 		vertical-align: middle;
- 		text-align: center;
- 		color: black;
-     }
-    #signup{
-        display: inline;
-        margin-left: 27%;
-     }
-    #signup input{
-        margin-right: 10px;
-        margin-left: 11%;
-     }
-
-    .deviceBtn{
-	   width: 130px;
-	   height: 130px;
-	   margin: 40px;
-    }
-    #deviceInfo {
- 	  margin: 10px 10%;
-
-    }
-    #brandInfo{
-	   margin-left: 40px;
-    }
-    #brandInfo-laptop{
-	   margin-left: 140px;
-    }
-    #modelInfo-laptop-brand1, #modelInfo-laptop-brand2, #modelInfo-laptop-brand3, #modelInfo-laptop-brand4, #modelInfo-laptop-brand5{
-	   margin-left: 140px;
-    }
-    #brandInfo-phone{
-	   margin-left: 140px;
-    }
-    #modelInfo-phone-brand1,#modelInfo-phone-brand2, #modelInfo-phone-brand3, #modelInfo-phone-brand4, #modelInfo-phone-brand5{
-        margin-left: 140px;
-    }
-    #brandInfo-accessory{
-	   margin-left: 140px;
-    }
-    #modelInfo-accessory-brand1, #modelInfo-accessory-brand2, #modelInfo-accessory-brand3, #modelInfo-accessory-brand4, #modelInfo-accessory-brand5{
-	   margin-left: 140px;
-    }
-    .btn {
-        margin-right: 30px;
-    }
-    #deviceInfo img {
- 	  width: 100px;
- 	  height: 70px;
-    }
-    #personalInfo {
- 	  display: block;
- 	  clear: both;
- 	  width: 50%;
-      margin-left: 50px;
-      margin: 5%;
-    }
 
     .none {
  	  display: none;
     }
 
-    /* faq section */
-    .accordion {
-        background-color: #eee;
-        color: #444;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-        transition: 0.4s;
-    }
-    .active, .accordion:hover {
-        background-color: #ccc;
-       }
-    .panel {
-        padding:18px;
-        display: none;
-        background-color: #F5F5F5;
-        overflow: hidden;
-    }
-
-    /* The Modal (background) */
-    .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-       }
-
-    /* Modal Content */
-    .modal-content {
-        background-color: #fefefe;
-        margin: auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-    }
-    #form-submit{
-        width: 100%;
-        margin-left: 0px;
-        background-color: mediumseagreen;
-        color: white;
-        font-weight: bold;
-    }
-
-    /* The Close Button */
-    .close {
-        color: #aaaaaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
-    .close:hover, .close:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    /* payment form */
-    .row {
-        display: -ms-flexbox; /* IE10 */
-        display: flex;
-        -ms-flex-wrap: wrap; /* IE10 */
-        flex-wrap: wrap;
-        margin: 0 -16px;
-    }
-    .col-25 {
-        -ms-flex: 25%; /* IE10 */
-        flex: 25%;
-    }
-    .col-50 {
-        -ms-flex: 50%; /* IE10 */
-        flex: 50%;
-    }
-    #billing-name, #billing-phone, #billing-address, #billing-city, #billing-postalcode, #billing-province, #billing-email{
-        margin-left: 0px;
-    }
-    .input--checkbox1 label span {
-         width: 16px;
-         height: 16px;
-         vertical-align: middle;
-         border-radius: 16px;
-         border: 1px solid black;
-         cursor: pointer;
-         position: absolute;
-         top: 50%;
-         left: 0;
-         display: block;
-         transform: translateY(-50%);
-     }
-     .input--checkbox2 label span {
-         width: 16px;
-         height: 16px;
-         vertical-align: middle;
-         border-radius: 16px;
-         border: 1px solid black;
-         cursor: pointer;
-         position: absolute;
-         top: 50%;
-         left: 0;
-         display: block;
-         transform: translateY(-50%);
-     }
-     .input--checkbox3 label span {
-         width: 16px;
-         height: 16px;
-         vertical-align: middle;
-         border-radius: 16px;
-         border: 1px solid black;
-         cursor: pointer;
-         position: absolute;
-         top: 50%;
-         left: 0;
-         display: block;
-         transform: translateY(-50%);
-     }
-     label p{
-         font-size: 15pt;
-         margin-top: -29px;
-         margin-left: 20px;
-     }
-     label img{
-         width: 60px;
-         margin-top: 5px;
-     }
-     #addressbox{
-         margin-top: 10px;
-     }
-    .col-75 {
-        -ms-flex: 75%; /* IE10 */
-        flex: 75%;
-    }
-
-    .col-25, .col-50, .col-75 {
-        padding: 0 16px;
-    }
-    .col-25 p{
-        margin-left: 10px;
-    }
-    .whole {
-        background-color: #f2f2f2;
-        padding: 5px 20px 15px 20px;
-        border: 1px solid lightgrey;
-        border-radius: 3px;
-    }
-    input[type=text] {
-        width: 100%;
-        margin-left: 43px;
-        margin-bottom: 20px;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-    }
-    #buttons{
-        margin-left: 39px;
-    }
-
-    label {
-        margin-bottom: 10px;
-        display: block;
-    }
-
-    .icon-container {
-        margin-bottom: 20px;
-        padding: 7px 0;
-        font-size: 24px;
-    }
-    #checkout{
-        width: 100%;
-        margin-left: 0px;
-        background-color: mediumseagreen;
-        color: white;
-        font-weight: bold;
-    }
-
-    /* buttons */
-    .btn {
-        border: none;
-        border-radius: 3px;
-        cursor: pointer;
-        font-size: 17px;
-        margin-left: 95px;
-    }
-    #brand1, #brand2, #brand3, #brand4, #brand5 {
-        /* margin-left: 55px; */
-    }
     a {
         color: #2196F3;
     }
@@ -452,25 +54,12 @@ body, h1, h2, h3, h4, h5, h6 {
         border: 1px solid lightgrey;
     }
 
-    span.price {
-        float: right;
-        color: grey;
-    }
-    #modelsearch{
-        display: block;
-        clear: both;
-        width: 50%;
-        margin-left: 50px;
-        margin: 5%;
-    }
-    .submitbtn {
-        padding: 12px;
-        margin: 10px 0;
-        border: none;
-        width: 100%;
-        border-radius: 3px;
-        cursor: pointer;
-        font-size: 17px;
+	.fields {
+		margin: 5%;
+	}
+    .copyright{
+        text-align: center;
+        color: #DAD8D1;
     }
 
     /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
@@ -488,12 +77,3 @@ body, h1, h2, h3, h4, h5, h6 {
 
 		}
 
-    /* login format */
-    #buttons button{
-        margin-top: 10px;
-        margin-left: 20px;
-    }
-    #status{
-        margin-top: 10px;
-        margin-left: 72px;
-    }
