@@ -11,29 +11,32 @@
 		background: white;
 		font-weight: bold;
 	}
+
+    #mapid { height: 180px; width: 300px;}
+
     #content {
-    
+        text-align: center;
     }
     #icon {
-        text-align: center;
         background: #DEDDDD
     }
-#about-us {
-    
-}
+    #homepage{
+		float: left;
+        margin-top: 17px;
+        margin-left: 10px;
+        font-size: 1.5em;
+	}
+    #about-us {
+        float: right;
+        text-align: center;
+        margin-right: 10px;
+        font-size: 1.5em;
+    }
 	.middletext {
 		line-height: 300px;
 		vertical-align: middle;
 		text-align: center;
 		color: black;
-	}
-
-	#homepage{
-		float: left;
-		text-align: center;
-        margin-top: 13px;
-        margin-left: 10px;
-        font-size: 1.5em;
 	}
 	.textfield {
 		outline: 0;
