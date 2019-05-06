@@ -128,7 +128,13 @@
 	}
 
 	mymap.on('locationfound', onLocationFound);
+	
+	function onLocationError(e) {
+    alert(e.message);
+	}
 
+	mymap.on('locationerror', onLocationError);
+	
 </script>
 
 
