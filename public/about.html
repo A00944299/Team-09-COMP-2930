@@ -4,19 +4,40 @@
    <title>About Us</title>
    <meta charset="utf-8"> 
    <style>
-         
+      
+      #video{
+         text-align: center;
+      }
+      .video {
+            margin-top: 20px;
+            display: inline-block;
+         }
+         body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+         }
+         list {
+            margin-top: 0;
+         }
          #Taskbar {
             width: 100%;
-            height: 200px;
+            height: 100px;
             background-color: dimgrey;
          }
          
          #Home{
-            margin-left: 1%;
-            margin-top: 1%;
-            width: 10%;
+            
+            margin: 10px 10px 10px 10px;
+            width: 60px;
             height: auto;
          }
+      
+      #info{
+         margin-bottom: 25px;
+      }
+      
       .header{
          font-size: 2em;
          text-align: center;
@@ -26,6 +47,7 @@
          text-align: justify;
          margin-left: 10%;
          margin-right: 10%;
+         margin-bottom: 40px;
       }
       #contacts {
          display: flex;
@@ -34,12 +56,23 @@
          margin: auto 0;
       }
       .contact {
-         font-size: 2em;
+         font-size: 12pt;
+         margin-top: 0;
          margin-left: 10px;
          margin-right: 10px;
       }
       
       @media only screen and (min-width: 900px){
+         
+         
+          body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+         }
+         
+        
          
          #Home {
             width: 60px;
@@ -62,11 +95,30 @@
          
          #info {
             width: 50%;
+            margin-bottom: 100px;
          }
          
-         .contact {
-            font-size: 1em;
+         #rightside {
+            width: 50%;
+            
          }
+         
+         
+         .video {
+            margin-top: 25px;
+            margin-left: 10%;
+            margin-right: 10%;
+         }
+         
+         #Contacts {
+            width: 100%;
+         }
+         
+         .contact info {
+            font-size: 18pt;
+         }
+         
+         
       }
          
       
@@ -74,15 +126,30 @@
 </head>
    
 <body>
-   <div>
       <!-- bar that has the home button -->
       <div id="Taskbar">
-         <nav>
-            <ul><a href="landing.html"> <img src="../Pictures/Capture.png" id="Home"></a></ul>
-         </nav>
+         
+            <a href="landing.html"> <img src="../Pictures/Capture.png" id="Home"></a>
+         
       </div>
       
       <div id="Combine">
+         <div id="rightside">
+      <div id="video">
+         <iframe class="video"; align="middle" height="300" width="500" src="https://www.youtube.com/embed/eIt9oI3LkXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div id="Contacts">
+         <h1 class="header">Contact Information</h1>
+         <div id="contacts">
+         <p class="contact info">
+            Chris Qin <br/> Daniel Chu <br/> David Li <br/> Rammel Razon <br/> Sebastian Bejm
+         </p>
+         <P class="contact info">
+            6041234567 <br/> 6042345678 <br/> 6043456789 <br/> 6044567890 <br/> 6055678901
+         </P>
+         </div>
+         </div>
+      </div>
          <div id="info">
             <h1 class="header">About Us</h1>
             <div class="Paragraph" id="p1">
@@ -96,18 +163,6 @@
             </div>
       </div>
       
-      <div>
-         <h1 class="header">Contact Us</h1>
-         <div id="contacts">
-         <p class="contact">
-            Chris Qin <br/> Daniel Chu <br/> David Li <br/> Rammel Razon <br/> Sebastian Bejm
-         </p>
-         <P class="contact">
-            6041234567 <br/> 6042345678 <br/> 6043456789 <br/> 6044567890 <br/> 6055678901
-         </P>
-         </div>
-         </div>
-      </div>
    </div>
 </body>
 </html>
