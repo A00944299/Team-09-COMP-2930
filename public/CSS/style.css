@@ -21,9 +21,6 @@
         height: auto;
         margin: -10px -10px -10px 0px;
     }
-    .about {
-        margin-top: 12px;
-    }
     
     /* Holds the content from the image to the circle buttons */
 
@@ -46,6 +43,7 @@
         float: right;
         text-align: center;
         margin-right: 10px;
+        margin-bottom: 1px;
         font-size: 1.1em;
     }
 
@@ -91,10 +89,20 @@
         color: #000;
     }
 
-    #mapid {
+    /* the map via an iframe */
+    
+    #map {
         text-align: center;
     }
+    iframe {
+        width: 620px;
+        height: 370px;
+        padding: 0;
+        margin
+    }
 
+    /* the searchbar */
+    
     #searchbar {
         text-align: center;
         display: flex;
@@ -146,4 +154,6 @@
 				position: absolute;
 
 		}
+
+
 
