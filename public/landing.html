@@ -5,12 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>TRASHere</title>
     <link href = "./CSS/style.css" rel="stylesheet" type="text/css">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
 </head>
 <body>
 	<div id="top">
 		<nav>
             <li><a href="./landing.html" id="homepage"><img src="../Pictures/Capture.png" class="img-fix" alt="TRASHere"/></a></li>
-			 <li class="about"><a href="./about.html" id="about-us">About Us</a></li>
+			 <li><a href="./about.html" id="about-us">About Us</a></li>
 		</nav>
 	</div>
 
@@ -27,18 +31,18 @@
             <button class="circle paper col">Paper</button>
             <button class="circle comp col">Compost</button>
         </div><br>
-        <div id="row">
+        <!-- <div id="row">
             <button class="circle other col">type1</button>
             <button class="circle other col">type2</button>
             <button class="circle other col">type3</button>
             <button class="circle other col">type4</button>
-        </div>
+        </div> -->
     </div><br>
     
-    <!-- map will go here later -->
+    <!-- Map area, add functions later to expand map fully with sidebar of trash options -->
     
-    <div id="mapid">
-        Map goes here later
+    <div id="map">
+        <iframe src="./map.html">Your browser does not support this content!</iframe>
     </div>
     
     <div id="searchbar" class="bar">
