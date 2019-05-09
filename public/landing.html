@@ -41,15 +41,13 @@
     
     <!-- Map area, add functions later to expand map fully with sidebar of trash options -->
     
-    <div id="map">
-        <iframe src="./map.html" scrolling="no">Your browser does not support this content!</iframe>
+    <div id="mapcontainer">
+        <div id="mapid"></div>
     </div>
     
     <div id="searchbar" class="bar">
         <input type="text" class="search" placeholder="Search for other trash types">
-        <button type="submit" class="searchButton" value="Submit">
-            Submit <!-- later put search icon here -->
-        </button>
+        <button type="submit" class="searchButton"><img src="../Pictures/search-icon.png" class="b"/></button>
     </div>
 
 	<!-- footer -->
@@ -58,6 +56,7 @@
 	</footer>
 
     <!-- JavaScript is linked here -->
+    <script src="/js/map.js"></script>
 
 </body>
 </html>
