@@ -54,12 +54,12 @@
     }
     .circle {
         width: 90px;
+        max-width: 90px;
         height: 90px;
         border-radius: 50%;
         font-size: 12pt;
         line-height: 65px;
         text-align: center;
-        
     }
 
     .col {
@@ -89,15 +89,15 @@
         color: #000;
     }
 
-    /* the map via an iframe */
-    
-    #map {
+    /* the map */
+
+    #mapcontainer {
         text-align: center;
     }
-    iframe {
-        width: 920px;
-        height: 570px;
-        padding: 0;
+    #mapid {
+        width: 900px;
+        height: 550px;
+        display: inline-block;
         
     }
 
@@ -118,35 +118,34 @@
         width: 200px;
     }
     .searchButton {
-        width: 60px;
+        width: 30px;
     }
-
-    .none {
- 	  display: none;
+    .b {
+        width: 14px;
+        height: auto;
     }
 
     a {
         color: #2196F3;
     }
-    hr {
-        border: 1px solid lightgrey;
-    }
 
 	.fields {
 		margin: 1%;
+        text-align: center;
 	}
     .copyright{
-        text-align: center;
+        display: inline-block;
         color: #DAD8D1;
     }
 
-    /* making the iframe responsive along with the content */    
+    /* making the map responsive along with the content */    
 
-    @media only screen and (max-width: 926px) {
-        iframe {
-            width: 98%;
-            overflow: hidden;
+    @media only screen and (max-width: 900px) {
+        #mapid {
+            width: 95%;
+            
         }
+        
     }
 
 
