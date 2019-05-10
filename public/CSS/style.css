@@ -118,6 +118,7 @@
         width: 200px;
     }
     .searchButton {
+        display: inline-block;
         width: 30px;
     }
     .b {
