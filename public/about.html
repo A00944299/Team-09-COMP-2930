@@ -4,27 +4,19 @@
    <title>About Us</title>
    <meta charset="utf-8"> 
    <style>
-      
-      #video{
-         text-align: center;
+      body, h1, p {
+         font-family: sans-serif;
       }
-      .video {
-            margin-top: 20px;
-            display: inline-block;
-         }
-         body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-         }
-         list {
-            margin-top: 0;
-         }
+      body {
+         padding: 0;
+         margin: 0;
+         
+      }
+      
          #Taskbar {
             width: 100%;
             height: 100px;
-            background-color: dimgrey;
+            background-color: #D1C8C8;
          }
          
          #Home{
@@ -33,90 +25,97 @@
             width: 60px;
             height: auto;
          }
+         
       
-      #info{
-         margin-bottom: 25px;
-      }
-      
-      .header{
-         font-size: 2em;
+      #element1 {
+         width: 100%;
+         padding-bottom: 40px;
          text-align: center;
+         margin: 50px auto;
+         padding-top: 40px;
+         margin-top: 0;
+         margin-bottom: 25px;
+         background-image: url(../Pictures/forest.jpg);
+         
       }
-      .text{
-         font-size: 1em;
-         text-align: justify;
-         margin-left: 10%;
-         margin-right: 10%;
-         margin-bottom: 40px;
-      }
-      #contacts {
+      
+      #element2 {
+         border-top: dashed;
+         padding-top: 120px;
+         padding-bottom: 120px;
+         border-bottom: dashed;
+         margin: 50px auto;
+         margin-top: 0;
+         margin-bottom: 0;
          display: flex;
          flex-direction: row;
-         justify-content: center;
-         margin: auto 0;
-      }
-      .contact {
-         font-size: 12pt;
-         margin-top: 0;
-         margin-left: 10px;
-         margin-right: 10px;
+         justify-content: space-evenly;
+         width: 75%;
+         
+         
       }
       
-      @media only screen and (min-width: 900px){
+      #element3 {
+         margin: 60px auto;
+         padding-top: 60px;
+      }
+      
+      #info {
+         display: flex;
+         flex-flow: row;
+         justify-content: space-evenly;
+      }
+      #video {
+         display: inline-block;
+         border-style: solid;
+         border-width: 10px;
+         border-color: dimgray;
+      }
+      
+      #left {
+         width: 50%;
+      }
+      
+      #right {
+         width: 50%;
+      }
+      
+      .header {
+         text-align: center;
+         font-size: 24pt
+      }
+      
+      .text {
+         text-align: center, justify;
+         margin: 10px 10px;
          
-          body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-         }
-         
-         #Home {
-            width: 60px;
-            height: auto;
-         }
-         
-         #Combine {
-            display: flex;
-            flex-flow: row;
-         }
+      }
+      .contact {
+         font-size: 14pt;
+      }
+      
+     
+      
+      @media only screen and (max-width: 700px){
+      
          #Taskbar {
             height: 100px;
          }
-         .text {
-            font-size: 1em;
+         
+         #video {
+            height: 315px;
+            width: 560px;
          }
          .header {
-            font-size: 2em;
+            font-size: 20pt;
          }
-         
-         #info {
-            width: 50%;
-            margin-bottom: 100px;
-         }
-         
-         #rightside {
-            width: 50%;
-            
+         .text {
+            font-size: 12pt;
+            text-align: left;
          }
          
          
-         .video {
-            margin-top: 25px;
-            margin-left: 10%;
-            margin-right: 10%;
-         }
          
-         #Contacts {
-            width: 100%;
-         }
-         
-         .contact info {
-            font-size: 18pt;
-         }
-         
-         
-      }
          
       
    </style>
@@ -125,41 +124,40 @@
 <body>
       <!-- bar that has the home button -->
       <div id="Taskbar">
-         
             <a href="landing.html"> <img src="../Pictures/Capture.png" id="Home"></a>
+      </div>
+         
+      <!-- contains the 30 second pitch for summary -->
+      <div id="element1">
+         <iframe id="video" width="610" height="365" src="https://www.youtube.com/embed/eIt9oI3LkXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+   
+      <!-- provides more information on the importance of waste management and anything else about the Website -->
+      <div id="element2">
+         <div id="Left">
+            <p class="header">About Us</p>
+            <p class="text">This app will make use of an interactive map function, which will use geolocation to track the person’s current position. Afterwards, the user can choose or search his/her disposal type and the application will filter which corresponding disposal bin(s) the user needs closest to the users location. The app will then guide the user to the nearest bin of convenience for him/her or the user may manually choose a disposal destination. There will be an option for the user to add the “less popular” trash options, such as refundables, etc. and will be stored the next time the user wants to find the respective bin.
+            </p>
+         </div>
+         
+         <div id="Right">
+            <p class="header">Waste Management</p>
+            <p class="text">The most important reason for proper waste management is to protect the environment and for the health and safety of the population. Certain types of waste can be hazardous and can pollute the environment. Bad waste management practices can also cause land and air pollution which can result in serious medical conditions in humans and animals. Implementing good waste management practices not only helps to protect the environment but can be beneficial to your business.</p>
+         </div>
+      </div>
+   
+      <!-- provides the contact information -->
+      <div id="element3">
+         <P class="header">Contact Info</P>
+         <div id="info">
+            <p class="contact"> Chris Qin <br/> Daniel Chu <br/> David Li <br/> Rammel Razon <br/> Sebastian Bejm</p>
+            <p class="contact"> 6041234567 <br/> 6042345678 <br/> 6043456789 <br/> 6044567890 <br/> 6055678901</p>
+         </div>
          
       </div>
+   
       
-      <div id="Combine">
-         <div id="rightside">
-      <div id="video">
-         <iframe class="video"; align="middle" height="300" width="500" src="https://www.youtube.com/embed/eIt9oI3LkXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div id="Contacts">
-         <h1 class="header">Contact Information</h1>
-         <div id="contacts">
-         <p class="contact info">
-            Chris Qin <br/> Daniel Chu <br/> David Li <br/> Rammel Razon <br/> Sebastian Bejm
-         </p>
-         <P class="contact info">
-            6041234567 <br/> 6042345678 <br/> 6043456789 <br/> 6044567890 <br/> 6055678901
-         </P>
-         </div>
-         </div>
-      </div>
-         <div id="info">
-            <h1 class="header">About Us</h1>
-            <div class="Paragraph" id="p1">
-               <p class="text">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
-            
-            </div>
-            
-            <div class="Paragraph" id="p2">
-               <h1 class="header">Waste Management</h1>
-               <p class="text">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
-            </div>
-      </div>
       
-   </div>
+      
 </body>
 </html>
