@@ -25,9 +25,10 @@
     /* Holds the content from the image to the circle buttons */
 
     #content {
-        padding: 4px;
+        padding: 3px;
         text-align: center;
         background: #DEDDDD;
+        
     }
     .img-fix2 {
         min-width: 170px;
@@ -38,6 +39,7 @@
         margin-top: 18px;
         margin-left: 10px;
         font-size: 1.1em;
+        
 	}
     #about-us {
         float: right;
@@ -61,12 +63,13 @@
         line-height: 65px;
         text-align: center;
     }
-
+    .circle:active {
+        opacity: 0.7;
+    }
     .col {
         margin-left: auto;
         margin-right: auto;
         display: inline-block;
-        padding: 10px;
     }
     .recycle {
         background: #3642E4;
@@ -93,6 +96,8 @@
 
     #mapcontainer {
         text-align: center;
+        
+        
     }
     #mapid {
         width: 900px;
@@ -107,19 +112,19 @@
         text-align: center;
         display: flex;
         padding: 10px;
-    }
-    .bar {
-        width: 260px;
+        width: 240px;
         margin-left: auto;
         margin-right: auto;
     }
-    .search {
+
+    #search {
         display: inline-block;
         width: 200px;
     }
-    .searchButton {
+    #searchButton {
         display: inline-block;
-        width: 30px;
+        width: 32px;
+
     }
     .b {
         width: 14px;
@@ -139,13 +144,17 @@
         color: #DAD8D1;
     }
 
-    /* making the map responsive along with the content */    
+    /* making things responsive on lower screen size */    
 
     @media only screen and (max-width: 900px) {
         #mapid {
             width: 95%;
             
         }
+        .copyright {
+            width: 60%;
+        }
+        
         
     }
 
