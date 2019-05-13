@@ -74,6 +74,7 @@
 	var NW05 = L.marker([49.252497, -123.002299]).addTo(mymap);
 	var NW06 = L.marker([49.252100, -123.002408]).addTo(mymap);
 
+	var EasterEgg = L.marker([29.30, 0.9]).addTo(mymap);
 
 	SE01.bindPopup("<b>SE01</b>");
 	SE02.bindPopup("<b>SE02</b>");
@@ -116,6 +117,8 @@
 	NW05.bindPopup("<b>NW05</b>");
 	NW06.bindPopup("<b>NW06</b>");
 
+	EasterEgg.bindPopup("<b>This is where you find elephant waste</b>");
+	
 	mymap.locate({setView: true, maxZoom: 16});
 
 	function onLocationFound(e) {
@@ -134,6 +137,8 @@
 	}
 
 	mymap.on('locationerror', onLocationError);
+	
+	
 	
 </script>
 
