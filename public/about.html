@@ -2,7 +2,8 @@
 <html>
 <head>
    <title>About Us</title>
-   <meta charset="utf-8"> 
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">   
    <style>
       body, h1, p {
          font-family: sans-serif;
@@ -94,27 +95,55 @@
          font-size: 14pt;
       }
       
-     
-      
-      @media only screen and (max-width: 700px){
+      @media only screen and (max-width: 768px){
       
          #Taskbar {
-            height: 100px;
+            height: 200px;
          }
-         
+         #element1 {
+            padding-top: 165px;
+            padding-bottom: 165px;
+            min-width: 768;
+            height: auto;
+         }
+         #element2 {
+            flex-direction: column;
+         }
          #video {
-            height: 315px;
-            width: 560px;
+            height: 320px;
+            width: 600px;
          }
          .header {
             font-size: 20pt;
          }
          .text {
-            font-size: 12pt;
+            font-size: 14pt;
             text-align: left;
          }
-         
-         
+      }
+     
+      @media only screen and (max-width: 420px){
+         #Taskbar {
+            height: auto;
+            min-width: 100%;
+         }
+         #element1 {
+            padding-top: 160px;
+            padding-bottom: 160px;
+            min-width: 100%;
+         }
+         #element2 {
+            padding-top: 30px;
+            flex-direction: column;
+         }
+         #video {
+            /*display: none;*/
+            width: 350px;
+            height: 200px;
+         }
+      }
+      
+          
          
          
       
@@ -132,7 +161,7 @@
          <iframe id="video" width="610" height="365" src="https://www.youtube.com/embed/eIt9oI3LkXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
    
-      <!-- provides more information on the importance of waste management and anything else about the Website -->
+      <!-- provides more information on the importance of ssswaste management and anything else about the Website -->
       <div id="element2">
          <div id="Left">
             <p class="header">About Us</p>
