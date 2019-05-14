@@ -8,45 +8,48 @@
     body {
         margin: 0;
     }
+
+    /* the top bar */
+
 	#top{
 		width: 100%;
         color: #D1C8C8;
 		background: #D1C8C8;
-		font-weight: bold;
         padding-bottom: 13px;
+        margin-bottom: -4px;
         display: inline-block;
 	}
     .img-fix {
-        width: 78%;
+        width: 60px;
         height: auto;
         margin: -10px -10px -10px 0px;
+        padding: 4px 0px 4px 0px;
+    }
+    #homepage{
+		float: left;
+        font-size: 1.1em;
+        margin: 16px 10px 0px 10px;
+	}
+    #about-us {
+        float: right;
+        text-align: center;
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-top: 25px;
+        margin-right: 10px;
     }
     
     /* Holds the content from the image to the circle buttons */
 
     #content {
-        padding: 3px;
+        padding: 6px 3px 0px 3px;
         text-align: center;
         background: #DEDDDD;
-        
     }
     .img-fix2 {
+        padding: 2px 0px 2px 0px;
         min-width: 170px;
         height: auto;
-    }
-    #homepage{
-		float: left;
-        margin-top: 18px;
-        margin-left: 10px;
-        font-size: 1.1em;
-        
-	}
-    #about-us {
-        float: right;
-        text-align: center;
-        margin-right: 10px;
-        margin-bottom: 1px;
-        font-size: 1.1em;
     }
 
     /* Holding the circles */
@@ -95,9 +98,7 @@
     /* the map */
 
     #mapcontainer {
-        text-align: center;
-        
-        
+        text-align: center; 
     }
     #mapid {
         width: 900px;
