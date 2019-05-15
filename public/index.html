@@ -13,19 +13,17 @@
 <body>
    <script src="js/trashereDB.js"></script>
 	<div id="top">
-		<nav>
-            <li><a href="./landing.html" id="homepage"><img src="../Pictures/Capture.png" class="img-fix" alt="TRASHere"/></a></li>
-			 <li><a href="./about.html" id="about-us">About Us</a></li>
-		</nav>
+        <a href="index.html" id="homepage"><img src="./Pictures/Capture.png" class="img-fix" alt="TRASHere"/></a>
+        <a href="about.html" id="about-us">About Us</a>
 	</div>
 
     <!-- the middle content box -->
     
     <div id="content">
         <div>
-            <img src="../Pictures/Capture.png" class="img-fix2" alt="TRASHere">
+            <img src="./Pictures/Capture.png" class="img-fix2" alt="TRASHere">
         </div>
-        <p>Choose a type of trash to throw away</p>
+        <p id="text">Choose a type of trash to throw away</p>
         <div id="row">
             <button class="circle recycle col">Recycling</button>
             <button class="circle garb col">Garbage</button>
@@ -46,9 +44,9 @@
         <div id="mapid"></div>
     </div>
     
-    <div id="searchbar" class="bar">
-        <input type="text" class="search" placeholder="Search for other trash types">
-        <button type="submit" class="searchButton"><img src="../Pictures/search-icon.png" class="b"/></button>
+    <div id="searchbar">
+        <input type="text" id="search" placeholder="Search for other trash types">
+        <button type="submit" id="searchButton"><img src="./Pictures/search-icon.png" class="b"/></button>
     </div>
 
 	<!-- footer -->
@@ -58,6 +56,6 @@
 
     <!-- JavaScript is linked here -->
     <script src="./js/map.js"></script>
-   
+
 </body>
 </html>
