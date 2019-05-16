@@ -11,7 +11,7 @@
     <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
 </head>
 <body>
-   <script src="js/trashereDB.js"></script>
+   
 	<div id="top">
         <a href="index.html" id="homepage"><img src="./Pictures/Capture.png" class="img-fix" alt="TRASHere"/></a>
         <a href="about.html" id="about-us">About Us</a>
@@ -26,7 +26,7 @@
         <p id="text">Choose a type of trash to throw away</p>
         <div id="row">
             <button class="circle recycle col">Recycling</button>
-            <button class="circle garb col">Garbage</button>
+            <button id="waste" class="circle garb col">Garbage</button>
             <button class="circle paper col">Paper</button>
             <button class="circle comp col">Compost</button>
         </div><br>
@@ -55,7 +55,26 @@
 	</footer>
 
     <!-- JavaScript is linked here -->
-    <script src="./js/map.js"></script>
+   <script src="./js/map.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-database.js"></script>
+
+   <script>
+      const firebaseConfig = {
+      apiKey: "AIzaSyD4o85AgKj_AEIKWqnne1CEskL7tqQvpOU",
+      authDomain: "trashere09.firebaseapp.com",
+      databaseURL: "https://trashere09.firebaseio.com",
+      projectId: "trashere09",
+      storageBucket: "trashere09.appspot.com",
+      messagingSenderId: "432917689538",
+      appId: "1:432917689538:web:b476eda1f65de16f"
+      };
+      
+      firebase.initializeApp(firebaseConfig);
+
+   </script>
+   <script src="js/search.js"></script>
 
 </body>
 </html>
