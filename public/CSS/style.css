@@ -35,7 +35,7 @@
         text-align: center;
         font-size: 1.1em;
         font-weight: bold;
-        margin-top: 25px;
+        margin-top: 20px;
         margin-right: 10px;
     }
     
@@ -83,11 +83,13 @@
         color: #fff;
     }
     .paper {
-        background: #36E442;
+        background: #FDFD79;
+        
         color: #000;
     }
     .comp {
-        background: #FDFD79;
+        
+        background: #36E442;
         color: #000;
     }
     .other {
@@ -127,7 +129,7 @@
         width: 32px;
 
     }
-    .b {
+    .icon-fix {
         width: 14px;
         height: auto;
     }
@@ -161,6 +163,14 @@
         .img-fix2 {
             width: 95%;
             height: auto;
+        }
+        .circle {
+            width: 78px;
+            height: 78px;
+            border-radius: 50%;
+            font-size: 11pt;
+            line-height: 65px;
+            
         }
     }
 
