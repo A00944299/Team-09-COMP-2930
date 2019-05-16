@@ -91,11 +91,11 @@ body, h1, p {
       @media only screen and (max-width: 768px){
       
          #Taskbar {
-            height: 200px;
+            height: 100px;
          }
          #element1 {
-            padding-top: 165px;
-            padding-bottom: 165px;
+            padding-top: 185px;
+            padding-bottom: 185px;
             min-width: 768;
             height: auto;
          }
