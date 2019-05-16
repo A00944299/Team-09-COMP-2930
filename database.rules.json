@@ -1,12 +1,10 @@
 {
-  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
   "rules": {
-    ".read": True,
-    ".write": True,
-    "trashere09": {
-       "BldngInfo": {
-          ".indexOn": {"BldngLat", "BldngLong", "battery", "clothesDrop", "electronic", "organic", "paper", "recycling", "refundable", "softPlastic", "waste"}
-       }
+    ".read": true,
+    ".write": false,
+    "BldngInfo": {
+      ".indexOn": ["BldngLat", "BldngLong", "battery",
+                   "clothesDrop", "electronic", "organic", "paper", "recycling", "refundable", "softPlastic", "waste"]
     }
   }
 }
