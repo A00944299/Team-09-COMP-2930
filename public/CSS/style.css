@@ -20,7 +20,7 @@
         display: inline-block;
 	}
     .img-fix {
-        width: 60px;
+        width: 130px;
         height: auto;
         margin: -10px -10px -10px 0px;
         padding: 4px 0px 4px 0px;
@@ -48,7 +48,7 @@
     }
     .img-fix2 {
         padding: 2px 0px 2px 0px;
-        min-width: 170px;
+        width: 400px;
         height: auto;
     }
 
@@ -156,7 +156,12 @@
             width: 60%;
         }
         
-        
+    }
+    @media only screen and (max-width: 400px) {
+        .img-fix2 {
+            width: 95%;
+            height: auto;
+        }
     }
 
 
