@@ -4,23 +4,23 @@ body, h1, p {
       body {
          padding: 0;
          margin: 0;
-         
+
       }
-      
+
          #Taskbar {
             width: 100%;
             height: auto;
             background-color: #D1C8C8;
          }
-         
+
          #Home{
-            
+
             margin: 10px 10px 10px 10px;
             width: 130px;
             height: auto;
          }
-         
-      
+
+
       #element1 {
          width: 100%;
          padding-bottom: 40px;
@@ -30,9 +30,9 @@ body, h1, p {
          margin-top: 0;
          margin-bottom: 25px;
          background-image: url(../Pictures/forest.jpg);
-         
+
       }
-      
+
       #element2 {
          border-top: dashed;
          padding-top: 120px;
@@ -45,15 +45,15 @@ body, h1, p {
          flex-direction: row;
          justify-content: space-evenly;
          width: 75%;
-         
-         
+
+
       }
-      
+
       #element3 {
          margin: 60px auto;
          padding-top: 60px;
       }
-      
+
       #info {
          display: flex;
          flex-flow: row;
@@ -65,24 +65,24 @@ body, h1, p {
          border-width: 10px;
          border-color: dimgray;
       }
-      
+
       #left {
          width: 50%;
       }
-      
+
       #right {
          width: 50%;
       }
-      
+
       .header {
          text-align: center;
          font-size: 24pt
       }
-      
+
       .text {
          text-align: center, justify;
          margin: 10px 10px;
-         
+
       }
       .contact {
          font-size: 14pt;
@@ -96,9 +96,12 @@ body, h1, p {
       }
 
       .picture{
-         height: auto;
+         height: 150px;
          width: 150px;
          border-radius: 50%;
+         border-color: light  grey;
+         border-width: 2px;
+         border-style: solid;
          display: inline-block;
       }
 
@@ -108,19 +111,19 @@ body, h1, p {
       }
       .information{
          width: 60%;
-         
+
       }
       .biotext{
          margin: 20px 10px;
       }
-      
+
       @media only screen and (max-width: 768px){
-         
+
          #Home {
             height: auto;
             width: 350px;
          }
-         
+
          #Taskbar {
             height: auto;
             min-width: 100%;
@@ -142,18 +145,18 @@ body, h1, p {
             font-size: 24pt;
             font-weight: bold;
          }
-         
+
          #Right {
             margin-top: 50px;
          }
-         
+
          .text {
             font-size: 18pt;
             text-align: left, justify;
-      
+
          }
       }
-     
+
       @media only screen and (max-width: 420px){
          #Taskbar {
             height: auto;
