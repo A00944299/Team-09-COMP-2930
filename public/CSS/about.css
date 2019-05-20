@@ -9,7 +9,7 @@ body, h1, p {
       
          #Taskbar {
             width: 100%;
-            height: 67px;
+            height: auto;
             background-color: #D1C8C8;
          }
          
@@ -87,15 +87,47 @@ body, h1, p {
       .contact {
          font-size: 14pt;
       }
+
+      /* bio css for the picture name description and information*/
+      .bio{
+         margin-top: 100px;
+         display: flex;
+         flex-flow: row;
+      }
+
+      .picture{
+         height: auto;
+         width: 150px;
+         border-radius: 50%;
+         display: inline-block;
+      }
+
+      .profile{
+         width: 30%;
+         text-align: center;
+      }
+      .information{
+         width: 60%;
+         
+      }
+      .biotext{
+         margin: 20px 10px;
+      }
       
       @media only screen and (max-width: 768px){
-      
+         
+         #Home {
+            height: auto;
+            width: 350px;
+         }
+         
          #Taskbar {
-            height: 100px;
+            height: auto;
+            min-width: 100%;
          }
          #element1 {
-            padding-top: 185px;
-            padding-bottom: 185px;
+            padding-top: 195px;
+            padding-bottom: 195px;
             min-width: 768;
             height: auto;
          }
@@ -107,11 +139,18 @@ body, h1, p {
             width: 600px;
          }
          .header {
-            font-size: 20pt;
+            font-size: 24pt;
+            font-weight: bold;
          }
+         
+         #Right {
+            margin-top: 50px;
+         }
+         
          .text {
-            font-size: 14pt;
-            text-align: left;
+            font-size: 18pt;
+            text-align: left, justify;
+      
          }
       }
      
@@ -128,6 +167,12 @@ body, h1, p {
          #element2 {
             padding-top: 30px;
             flex-direction: column;
+         }
+         .text {
+            font-size: 14pt;
+         }
+         #Home {
+            width: 200px;
          }
          #video {
             /*display: none;*/

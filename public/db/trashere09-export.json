@@ -276,7 +276,7 @@
       "type" : "recycling"
     },
 
-    "air purifier" : {
+    "air purifiers" : {
       "type" : "electronic"
     },
 
@@ -296,11 +296,15 @@
       "type" : "recycling"
     },
 
+    "aluminum foil baking trays" : {
+      "type" : "recycling"
+    },
+
     "amplifier" : {
       "type" : "electronic"
     },
     
-    "baby formula" : {
+    "baby Formula" : {
       "type" : "recycling"
     },
 
@@ -324,6 +328,10 @@
       "type" : "organic"
     },
 
+    "banner" : {
+      "type" : "organic"
+    },
+
     "bar soap" : {
       "type" : "organic"
     },
@@ -332,23 +340,35 @@
       "type" : "battery"
     },
 
+    "bbq briquettes" : {
+      "type" : "organic"
+    },
+
     "beard trimmer" : {
       "type" : "electronic"
     },
 
     "beer bottles" : {
-      "type" : "refundable"
+      "type" : "recycling"
     },
 
     "beer cans" : {
-      "type" : "refundable"
+      "type" : "recycling"
     },
 
     "beverage containers" : {
       "type" : "recycling"
     },
+
+    "bike Frame" : {
+      "type" : "recycling"
+    },
+
+    "bike light" : {
+      "type" : "recycling"
+    },
     
-    "christmas lights" : {
+    "christmas Lights" : {
       "type" : "electronic"
     },
     
@@ -396,12 +416,12 @@
       "type" : "waste"
     },
 
-    "contact lenses" : {
+    "contact Lenses" : {
       "type" : "waste"
     },
 
     "cooking oil" : {
-      "type" : "waste"
+      "type" : "recycling"
     },
     
     "cosmetics" : {
@@ -466,8 +486,523 @@
     
     "dvd" : {
       "type" : "electronic"
-    }
+    },
     
+    "egg carton" : {
+        "type" : "recycling"
+    },
+    
+    "eggs" : {
+        "type" : "organic"
+    },
+    
+    "eggshells" : {
+        "type" : "organic"
+    },
+      
+    "electrical motor" : {
+        "type" : "electronic"
+    },
+      
+    "electrical panel" : {
+        "type" : "electronic"
+    },
+      
+    "electric knife" : {
+        "type" : "electronic"
+    },
+    
+    "electric shaver" : {
+        "type" : "electronic"
+    },
+    
+    "envelope" : {
+        "type" : "paper"
+    },
+    
+    "fabric softener container" : {
+        "type" : "recycling"
+    },
+      
+    "facial tissue" : {
+        "type" : "organic"
+    },
+      
+    "fan" :{
+        "type" : "electronic"
+    },
+      
+    "fax machine" : {
+        "type" : "electronic"
+    },
+      
+    "feminine hygiene products" : {
+        "type" : "waste"
+    },
+    
+    "file folders" : {
+        "type" : "paper"
+    },
+    
+    "fine paper" : {
+        "type" : "paper"
+    },
+      
+    "fish" : {
+        "type" : "organic"
+    },
+      
+    "flash drive" : {
+        "type" : "electronic"
+    },
+    
+    "flashlight" : {
+        "type" : "recycling"
+    },
+    
+    "floor lamp" : {
+        "type" : "recycling"
+    },
+    
+    "flour" : {
+        "type" : "organic"
+    },
+      
+    "flour bags" : {
+        "type" : "paper"
+    },
+    
+    "flowers" : {
+        "type" : "organic"
+    },
+    
+    "flyers" : {
+        "type" : "paper"
+    },
+    
+    "food steamer" : {
+        "type" : "electronic"
+    },
+    
+    "fruit" : {
+        "type" : "organic"
+    },
+    "gift bag" : {
+        "type" : "paper"
+    },
+    
+    "gift bows" : {
+        "type" : "waste"
+    },
+    
+    "gift boxes" : {
+        "type" : "paper"
+    },
+    
+    "gift wrap" : {
+        "type" : "paper"
+    },
+    
+    "glass bottles" : {
+        "type" : "recycling"
+    },
+    
+    "glue bottles" : {
+        "type" : "waste"
+    },
+    
+    "grapes bag" : {
+        "type" : "recycling"
+    },
+    
+    "grease" : {
+        "type" : "organic"
+    },
+    
+    "griddle" : {
+        "type" : "electronic"
+    },
+    
+    "grocery bag" : {
+        "type" : "recycling"
+    },
+    
+    "hair curler" : {
+        "type" : "electronic"
+    },
+    
+    "hair dryer" : {
+        "type" : "electronic"
+    },
+    
+    "hair" : {
+        "type" : "waste"
+    },
+    
+    "hair straightener" : {
+        "type" : "electronic"
+    },
+    
+    "headphones" : {
+        "type" : "electronic"
+    },
+    
+    "helmet" : {
+        "type" : "recycling"
+    },
+    
+    "houseplants" : {
+        "type" : "organic"
+    },
+    
+    "ice cream carton" : {
+        "type" : "waste"
+    },
+    
+    "ice cream maker" : {
+        "type" : "electronic"
+    },
+    
+    "ice cream tub" : {
+        "type" : "recycling"
+    },
+    
+    "index card" : {
+        "type" : "paper"
+    },
+    
+    "jacket" : {
+        "type" : "clothesDrop"
+    },
+    
+    "jam jar" : {
+        "type" : "recycling"
+    },
+    
+    "jewel case" : {
+        "type" : "waste"
+    },
+    
+    "jointer" : {
+        "type" : "electronic"
+    },
+    
+    "juice box" : {
+        "type" : "paper"
+    },
+    
+    "junk mail" : {
+        "type" : "paper"
+    },
+    
+    "karaoke machine" : {
+        "type" : "electronic"
+    },
+    
+    "ketchup bottle" : {
+        "type" : "recycling"
+    },
+    
+    "kettle" : {
+        "type" : "electronic"
+    },
+    
+    "keyboard" : {
+        "type" : "electronic"
+    },
+    
+    "kfc bucket" : {
+        "type" : "paper"
+    },
+    
+    "knitting machine" : {
+        "type" : "electronic"
+    },
+    
+    "lamp" : {
+        "type" : "recycling"
+    },
+    
+    "lamp holder" : {
+        "type" : "recycling"
+    },
+    
+    "laptop" : {
+        "type" : "electronic"
+    },
+    
+    "latex rubber gloves" : {
+        "type" : "waste"
+    },
+    
+    "laundry detergent box" : {
+        "type" : "paper"
+    },
+    
+    "led light" : {
+        "type" : "recycling"
+    },
+    
+    "leaves" : {
+        "type" : "organic"
+    },
+    
+    "leftovers" : {
+        "type" : "organic"
+    },
+    
+    "light box" : {
+        "type" : "electronic"
+    },
+    
+    "loose tea" : {
+        "type" : "organic"
+    },
+    
+    "magazines" : {
+        "type" : "paper"
+    },
+    
+    "magnet" : {
+        "type" : "waste"
+    },
+    
+    "masking tape" : {
+        "type" : "waste"
+    },
+    
+    "mat" : {
+        "type" : "waste"
+    },
+    
+    "match" : {
+        "type" : "waste"
+    },
+    
+    "mayonnaise" : {
+        "type" : "organic"
+    },
+    
+    "milk bag" : {
+        "type" : "waste"
+    },
+    
+    "milk jug" : {
+        "type" : "recycling"
+    },
+    
+    "mouse" : {
+        "type" : "electronic"
+    },
+    
+    "mp3 player" : {
+        "type" : "electronic"
+    },
+    
+    "mustard bottle" : {
+        "type" : "recycling"
+    },
+    
+    "nail clippings" : {
+        "type" : "organic"
+    },
+    
+    "nail polish" : {
+        "type" : "waste"
+    },
+    
+    "nespresso pods" : {
+        "type" : "recycling"
+    },
+    
+    "newspaper" : {
+        "type" : "paper"
+    },
+    
+    "nuts" : {
+        "type" : "organic"
+    },
+    
+    "oatmeal" : {
+        "type" : "organic"
+    },
+    
+    "oats" : {
+        "type" : "organic"
+    },
+    
+    "onion bag" : {
+        "type" : "recycling"
+    },
+    
+    "packing paper" : {
+        "type" : "paper"
+    },
+    
+    "paper" : {
+        "type" : "paper"
+    },
+    
+    "paper bags" : {
+        "type" : "paper"
+    },
+    
+    "paper cups" : {
+        "type" : "recycling"
+    },
+    
+    "paper napkin" : {
+        "type" : "organic"
+    },
+    
+    "paper plates" : {
+        "type" : "organic"
+    },
+    
+    "paper towel rolls" : {
+        "type" : "paper"
+    },
+     
+    "parking ticket" : {
+      "type" : "waste",
+      "message" : "Please pay your ticket before disposing :)"
+    },
+    
+    "pasta" : {
+        "type" : "organic"
+    },
+    
+    "peanut butter" : {
+        "type" : "organic"
+    },
+    
+    "pencil shavings" : {
+        "type" : "waste"
+    },
+    
+    "popcorn" : {
+        "type" : "organic"
+    },
+    
+    "plastic bag" : {
+        "type" : "softPlastic"
+    },
+    
+    "radio" : {
+        "type" : "electronic"
+    },
+    
+    "rice bag" : {
+        "type" : "recycling"
+    },
+    
+    "rice" : {
+        "type" : "organic"
+    },
+    
+    "rubber band" : {
+        "type" : "waste"
+    },
+    
+    "router" : {
+        "type" : "electronic"
+    },
+    
+    "salad dressing" : {
+        "type" : "organic"
+    },
+    
+    "sauce" : {
+        "type" : "organic"
+    },
+    
+    "scissors" : {
+        "type" : "recycling"
+    },
+    
+    "seafood" : {
+        "type" : "organic"
+    },
+    
+    "seeds" : {
+        "type" : "organic"
+    },
+    
+    "shoe box" : {
+        "type" : "paper"
+    },
+    
+    "soap" : {
+        "type" : "organic"
+    },
+    
+    "speakers" : {
+        "type" : "electronic"
+    },
+    
+    "sugar" : {
+        "type" : "organic"
+    },
+    
+    "tea" : {
+        "type" : "organic"
+    },
+    
+    "textbook" : {
+        "type" : "paper"
+    },
+    
+    "tissue" : {
+        "type" : "waste"
+    },
+    
+    "toothbrush" : {
+        "type" : "waste"
+    },
+    
+    "turkey" : {
+        "type" : "organic"
+    },
+    
+    "tree stump" : {
+        "type" : "organic"
+    },
+    
+    "umbrella" : {
+        "type" : "waste"
+    },
+    
+    "vacuum bag" : {
+        "type" : "waste"
+    },
+    
+    "vcr or dvd player" : {
+        "type" : "electronic"
+    },
+    
+    "vegetables" : {
+        "type" : "organic"
+    },
+    
+    "wallpaper" : {
+        "type" : "waste"
+    },
+    
+    "wrappers" : {
+        "type" : "recycling"
+    },
+    
+    "writing paper" : {
+        "type" : "paper"
+    },
+    
+    "yogurt" : {
+        "type" : "organic"
+    },
+    
+    "zipper" : {
+        "type" : "recycling"
+    }
   }
 }
 
