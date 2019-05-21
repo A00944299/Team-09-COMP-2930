@@ -8,13 +8,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
-  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
-
-	<link rel="stylesheet" href="../tripkit-leaflet/css/TripgoRouting.css"/>
-  <script src="../tripkit-leaflet/dist/TripgoRouting.js"></script>
-  <script src="../tripkit-leaflet/lib/Polyline.encoded.js"></script>
-	<script src="../tripkit-leaflet/lib/jquery-3.2.1.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+		integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+		crossorigin=""/>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+		integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+		crossorigin=""></script>
+	<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
 
 
 </head>
@@ -22,17 +23,12 @@
 
 <div id="mapid" style="width: 900px; height: 550px;"></div>
 <script>
-        let options ={
-            "mapId" : "map",
-            "googleTile": true,
-            "mapCenter" : {
-                "lat": 51.511011,
-                "lng": -0.125448
-            },
-            "floatPanel": false,
-            "tripgoApiKey": "your TripGo api key"
-        }
-        L.tripgoRouting.mapLayer.initialize(options);
+	L.Routing.control({
+  	waypoints: [
+    	L.latLng(49.251153, -122.999092),
+    	L.latLng(49.250586, -123.003005)
+  	]
+}).addTo(map);
 </script>
 <script>
 
@@ -177,8 +173,6 @@
 	}
 
 	mymap.on('locationerror', onLocationError);
-
-
 
 </script>
 
