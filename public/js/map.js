@@ -28,16 +28,28 @@
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(mymap);
 
+	var markers = L.layerGroup();
+
+	function addToMap(x,y){
+		var marker = L.marker([x,y]).addTo(mymap);
+		marker.bindPopup();
+		marker.addTo(markers);
+	}
+
+	function clear(){
+		markers.clearLayers();
+	}
+	markers.addTo(mymap);
 // SE Buildings
-	var SE01 = L.marker([49.251153, -122.999092], {icon: greenIcon}).addTo(mymap);
-	var SE02 = L.marker([49.251386, -123.001534], {icon: redIcon}).addTo(mymap);
-	var SE04 = L.marker([49.251339, -123.000147], {icon: blueIcon}).addTo(mymap);
-	var SE06 = L.marker([49.250924, -123.000546], {icon: pinkIcon}).addTo(mymap);
-	var SE08 = L.marker([49.250796, -123.001394], {icon: yellowIcon}).addTo(mymap);
-	var SE09 = L.marker([49.250414, -123.001337], {icon: purpleIcon}).addTo(mymap);
-	var SE12 = L.marker([49.249936, -123.001589], {icon: orangeIcon}).addTo(mymap);
-	var SE14 = L.marker([49.249469, -123.000890], {icon: blackIcon}).addTo(mymap);
-	var SE16 = L.marker([49.248829, -123.001043], {icon: cyanIcon}).addTo(mymap);
+	/*var SE01 = L.marker([49.251153, -122.999092]).addTo(mymap);
+	var SE02 = L.marker([49.251386, -123.001534]).addTo(mymap);
+	var SE04 = L.marker([49.251339, -123.000147]).addTo(mymap);
+	var SE06 = L.marker([49.250924, -123.000546]).addTo(mymap);
+	var SE08 = L.marker([49.250796, -123.001394]).addTo(mymap);
+	var SE09 = L.marker([49.250414, -123.001337]).addTo(mymap);
+	var SE12 = L.marker([49.249936, -123.001589]).addTo(mymap);
+	var SE14 = L.marker([49.249469, -123.000890]).addTo(mymap);
+	var SE16 = L.marker([49.248829, -123.001043]).addTo(mymap);
 
 //SW Buildings
 	var SW01 = L.marker([49.251174, -123.002779]).addTo(mymap);
@@ -115,17 +127,20 @@
 	NW03.bindPopup("<b>NW03</b>");
 	NW05.bindPopup("<b>NW05</b>");
 	NW06.bindPopup("<b>NW06</b>");
-
-	EasterEgg.bindPopup("<b>This is where you find elephant waste</b>");
+*/
+	/*EasterEgg.bindPopup("<b>This is where you find elephant waste</b>");*/
+	var position = L.layerGroup();
+	position.addTo(mymap);
 
 	mymap.locate({setView: true, maxZoom: 16});
 
 	function onLocationFound(e) {
-    var radius = e.accuracy / 2;
-
-    L.marker(e.latlng).addTo(mymap)
-        .bindPopup("You are within " + radius + " meters from this point").openPopup();
-
+	var radius = e.accuracy / 2;
+	
+	
+    var pos = L.marker(e.latlng).addTo(mymap)
+		.bindPopup("You are within " + radius + " meters from this point").openPopup();
+	pos.addTo(position);
     L.circle(e.latlng, radius).addTo(mymap);
 	}
 
