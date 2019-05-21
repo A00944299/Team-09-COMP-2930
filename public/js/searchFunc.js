@@ -71,7 +71,7 @@ function findClosest() {
         nearestBuild = buildingList[i];
       }
     });
-    setTimeout(console.log(JSON.parse(JSON.stringify("nearestVal: " + nearestVal))), 10000);
+    setTimeout(console.log(JSON.parse(JSON.stringify("nearestVal: " + nearestVal))));
     console.log(JSON.parse(JSON.stringify("nearestBuild: " + nearestBuild)));
   }
 }

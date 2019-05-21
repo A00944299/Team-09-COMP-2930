@@ -60,24 +60,7 @@
 
 //NE Buildings
 	var NE01 = L.marker([49.254129, -123.000994]).addTo(mymap);
-	var NE02 = L.marker([49.253355, -123.001546]).addTo(mymap);
-	var NE03 = L.marker([49.253847, -122.999825]).addTo(mymap);
-	var NE04 = L.marker([49.253368, -123.000633]).addTo(mymap);
-	var NE06 = L.marker([49.253300, -122.999776]).addTo(mymap);
-	var NE07 = L.marker([49.253692, -122.998587]).addTo(mymap);
-	var NE08 = L.marker([49.253300, -122.999243]).addTo(mymap);
-	var NE09 = L.marker([49.254048, -122.998707]).addTo(mymap);
-	var NE10 = L.marker([49.253259, -122.998486]).addTo(mymap);
-	var NE12 = L.marker([49.252720, -122.998489]).addTo(mymap);
-	var NE16 = L.marker([49.252007, -122.999725]).addTo(mymap);
-	var NE18 = L.marker([49.252058, -123.000600]).addTo(mymap);
-	var NE20 = L.marker([49.252046, -123.001542]).addTo(mymap);
-	var NE21 = L.marker([49.252901, -123.001681]).addTo(mymap);
 	var NE22 = L.marker([49.252487, -123.001704]).addTo(mymap);
-	var NE23 = L.marker([49.252923, -123.001109]).addTo(mymap);
-	var NE24 = L.marker([49.252460, -123.001114]).addTo(mymap);
-	var NE25 = L.marker([49.252916, -123.000444]).addTo(mymap);
-	var NE28 = L.marker([49.252474, -122.999908]).addTo(mymap);
 
 //NW Buildings
 	var NW01 = L.marker([49.252744, -123.003287]).addTo(mymap);
