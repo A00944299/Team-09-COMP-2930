@@ -1,5 +1,9 @@
 var myFirebase = firebase.database();
 
+var imported = document.createElement('script');
+imported.src = 'map.js';
+document.head.appendChild(imported);
+
 var wasteButton = document.getElementById("waste");
 var recyclingButton = document.getElementById("recycling");
 var compostButton = document.getElementById("compost");
@@ -60,8 +64,3 @@ paperButton.addEventListener("click", function(){
       console.log("Paper " + x.paper)
   });
 });
-
-
-
-
-

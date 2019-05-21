@@ -1,13 +1,32 @@
 
 	var mymap = L.map('mapid').setView([49.250586, -123.003005], 15);
 
-	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-		maxZoom: 18,
-		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-		id: 'mapbox.streets'
-	}).addTo(mymap);
+	var colorIcons = L.Icon.extend({
+		options: {
+  		iconSize:     [21, 35], // size of the icon
+			iconAnchor:   [12, 30], // point of the icon which will correspond to marker's location
+    	popupAnchor:  [0.5, -30], // point from which the popup should open relative to the iconAnchor
+
+			shadowUrl: 		null,
+    	shadowSize:   null, // size of the shadow
+			shadowAnchor: null,  // the same for the shadow
+		}
+	});
+
+	var greenIcon = new colorIcons({iconUrl: 'Pictures/green.png'});
+  var redIcon = new colorIcons({iconUrl: 'Pictures/red.png'});
+	var	blueIcon = new colorIcons({iconUrl: 'Pictures/blue.png'});
+	var	yellowIcon = new colorIcons({iconUrl: 'Pictures/yellow.png'});
+	var	purpleIcon = new colorIcons({iconUrl: 'Pictures/purple.png'});
+	var	brownIcon = new colorIcons({iconUrl: 'Pictures/brown.png'});
+	var	pinkIcon = new colorIcons({iconUrl: 'Pictures/pink.png'});
+	var	orangeIcon = new colorIcons({iconUrl: 'Pictures/orange.png'});
+	var	cyanIcon = new colorIcons({iconUrl: 'Pictures/cyan.png'});
+	var	blackIcon = new colorIcons({iconUrl: 'Pictures/black.png'});
+
+	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(mymap);
 
 	var markers = L.layerGroup();
 
@@ -126,10 +145,9 @@
 	}
 
 	mymap.on('locationfound', onLocationFound);
-	
+
 	function onLocationError(e) {
     alert(e.message);
 	}
 
 	mymap.on('locationerror', onLocationError);
-	
