@@ -7,8 +7,10 @@ var paperButton = document.getElementById("paper");
 
 wasteButton.addEventListener("click", function(){
   var ref = myFirebase.ref("BldngInfo");
+  clear()
   ref.on("child_added", function(snapshot){
     var x = snapshot.val();
+    addToMap(x.BldngLat,x.BldngLong);
       console.log("BuildingNo " + snapshot.key);
       console.log("Latitute " + x.BldngLat);
       console.log("Longitude " + x.BldngLong)
@@ -19,8 +21,10 @@ wasteButton.addEventListener("click", function(){
 
 recyclingButton.addEventListener("click", function(){
   var ref = myFirebase.ref("BldngInfo");
+  clear()
   ref.on("child_added", function(snapshot){
     var x = snapshot.val();
+    addToMap(x.BldngLat,x.BldngLong);
     console.log("BuildingNo " + snapshot.key);
     console.log("Latitute " + x.BldngLat);
     console.log("Longitude " + x.BldngLong)
@@ -31,8 +35,11 @@ recyclingButton.addEventListener("click", function(){
 
 compostButton.addEventListener("click", function(){
   var ref = myFirebase.ref("BldngInfo");
+  clear()
   ref.on("child_added", function(snapshot){
     var x = snapshot.val();
+    
+    addToMap(x.BldngLat,x.BldngLong);
       console.log("BuildingNo " + snapshot.key);
       console.log("Latitute " + x.BldngLat);
       console.log("Longitude " + x.BldngLong)
@@ -43,8 +50,10 @@ compostButton.addEventListener("click", function(){
 
 paperButton.addEventListener("click", function(){
   var ref = myFirebase.ref("BldngInfo");
+  clear()
   ref.on("child_added", function(snapshot){
     var x = snapshot.val();
+    addToMap(x.BldngLat,x.BldngLong);
       console.log("BuildingNo " + snapshot.key);
       console.log("Latitute " + x.BldngLat);
       console.log("Longitude " + x.BldngLong)

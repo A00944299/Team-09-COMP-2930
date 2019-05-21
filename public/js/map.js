@@ -9,8 +9,20 @@
 		id: 'mapbox.streets'
 	}).addTo(mymap);
 
+	var markers = L.layerGroup();
+
+	function addToMap(x,y){
+		var marker = L.marker([x,y]).addTo(mymap);
+		marker.bindPopup();
+		marker.addTo(markers);
+	}
+
+	function clear(){
+		markers.clearLayers();
+	}
+	markers.addTo(mymap);
 // SE Buildings
-	var SE01 = L.marker([49.251153, -122.999092]).addTo(mymap);
+	/*var SE01 = L.marker([49.251153, -122.999092]).addTo(mymap);
 	var SE02 = L.marker([49.251386, -123.001534]).addTo(mymap);
 	var SE04 = L.marker([49.251339, -123.000147]).addTo(mymap);
 	var SE06 = L.marker([49.250924, -123.000546]).addTo(mymap);
@@ -96,17 +108,20 @@
 	NW03.bindPopup("<b>NW03</b>");
 	NW05.bindPopup("<b>NW05</b>");
 	NW06.bindPopup("<b>NW06</b>");
+*/
+	/*EasterEgg.bindPopup("<b>This is where you find elephant waste</b>");*/
+	var position = L.layerGroup();
+	position.addTo(mymap);
 
-	EasterEgg.bindPopup("<b>This is where you find elephant waste</b>");
-	
 	mymap.locate({setView: true, maxZoom: 16});
 
 	function onLocationFound(e) {
-    var radius = e.accuracy / 2;
-
-    L.marker(e.latlng).addTo(mymap)
-        .bindPopup("You are within " + radius + " meters from this point").openPopup();
-
+	var radius = e.accuracy / 2;
+	
+	
+    var pos = L.marker(e.latlng).addTo(mymap)
+		.bindPopup("You are within " + radius + " meters from this point").openPopup();
+	pos.addTo(position);
     L.circle(e.latlng, radius).addTo(mymap);
 	}
 

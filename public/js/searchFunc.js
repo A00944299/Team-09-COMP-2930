@@ -24,12 +24,24 @@ function search() {
   buildingList = [];
   
   // connecting to TrashType database
-  let ref = myfirebase.ref("TrashType");
+  var ref = myfirebase.ref("TrashType");
   ref.orderByKey().equalTo(input).on("child_added", function(snapshot) {
     let x = snapshot.val();
     let type = x.type;
     console.log(JSON.parse(JSON.stringify(type)));
     identifyBuilding(type, findClosest);
+    building(type);
+  });
+}
+
+function building(x){
+  clear();
+  console.log("buld");
+  let ref = myfirebase.ref("BldngInfo");
+  ref.orderByChild(x).equalTo(1).on("child_added", function(snapshot){
+    let x = snapshot.val();
+    
+    addToMap(x.BldngLat, x.BldngLong);
   });
 }
 
