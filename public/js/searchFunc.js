@@ -32,7 +32,7 @@ function search() {
   let ref = myfirebase.ref("TrashType");
   ref.orderByKey().equalTo(input).on("child_added", function(snapshot) {
     let x = snapshot.val();
-    let type = x.type;
+    let type = x.type.toString();
     currType = type.toString().toUpperCase();
     //console.log(JSON.parse(JSON.stringify(type)));
     //identifyBuilding(type, findClosest);
@@ -43,12 +43,44 @@ function search() {
 
 // places the markers on the map
 function building(x){
+  let c = "";
+  let z = x.toString();
+  console.log(z);
   clear();
   // connecting to BldngInfo database
   let ref = myfirebase.ref("BldngInfo");
+  switch(x){
+    case "waste" : 
+     c = "black"
+     break;
+    case "organic":
+      c = "green"
+      break;
+    case "paper" :
+      c = "yellow"
+      break;
+    case "recycling":
+      c = "blue"
+      break;
+    case "battery":
+      c = "red"
+      break;
+    case "electronic":
+      c = "purple"
+      break;
+    case "softPlastic":
+      c = "cyan"
+      break;
+    case "clothesDrop":
+      c = "brown"
+      break;
+    case "refundable" :
+      c = "orange"
+      break;
+  }
   ref.orderByChild(x).equalTo(1).on("child_added", function(snapshot){
     let x = snapshot.val();
-    addToMap(x.BldngLat, x.BldngLong, snapshot.key);
+    addToMap(x.BldngLat, x.BldngLong, snapshot.key,c);
   });
 }
 
