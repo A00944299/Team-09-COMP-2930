@@ -48,7 +48,7 @@ function building(x){
   let ref = myfirebase.ref("BldngInfo");
   ref.orderByChild(x).equalTo(1).on("child_added", function(snapshot){
     let x = snapshot.val();
-    addToMap(x.BldngLat, x.BldngLong);
+    addToMap(x.BldngLat, x.BldngLong, snapshot.key);
   });
 }
 

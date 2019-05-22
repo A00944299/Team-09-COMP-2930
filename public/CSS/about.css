@@ -182,4 +182,19 @@ body, h1, p {
             width: 350px;
             height: 200px;
          }
+         
+         .bio {
+            display: flex;
+            flex-flow: column;
+            align-content: center;
+         }
+         
+         .profile, .information {
+            display: inline-block;
+            width: 100%;
+         }
+         .information {
+            width: 100%;
+            font-size: 11pt;
+         }
       }
