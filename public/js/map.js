@@ -34,6 +34,7 @@
 function addToMap(x,y,z){
   var marker = L.marker([x,y]).addTo(mymap);
   marker.bindPopup(z);
+  
   marker.addTo(markers);
 }
 
