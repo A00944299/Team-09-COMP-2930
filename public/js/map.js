@@ -31,9 +31,48 @@
 	var markers = L.layerGroup();
 
 
-function addToMap(x,y,z){
-  var marker = L.marker([x,y]).addTo(mymap);
-  marker.bindPopup(z);
+function addRecycleToMap(x,y,z){
+  var marker = L.marker([x,y], {icon: blueIcon}).addTo(mymap).bindPopop(z);
+  marker.addTo(markers);
+}
+
+function addWasteToMap(x,y,z){
+	var marker = L.marker([x,y], {icon: blackIcon}).addTo(mymap).bindPopop(z);
+  marker.addTo(markers);
+}
+
+function addOrganicToMap(x,y,z){
+	var marker = L.marker([x,y], {icon: greenIcon}).addTo(mymap).bindPopop(z);
+  marker.addTo(markers);
+}
+
+function addPaperToMap(x,y,z){
+	var marker = L.marker([x,y], {icon: yellowIcon}).addTo(mymap).bindPopop(z);
+  marker.addTo(markers);
+}
+
+function addRefundToMap(x,y,z){
+	var marker = L.marker([x,y]).addTo(mymap).bindPopop(z);
+  marker.addTo(markers);
+}
+
+function addBatteryToMap(x,y,z){
+	var marker = L.marker([x,y]).addTo(mymap).bindPopop(z);
+  marker.addTo(markers);
+}
+
+function addSPToMap(x,y,z){
+	var marker = L.marker([x,y]).addTo(mymap).bindPopop(z);
+  marker.addTo(markers);
+}
+
+function addClothesToMap(x,y,z){
+	var marker = L.marker([x,y]).addTo(mymap).bindPopop(z);
+  marker.addTo(markers);
+}
+
+function addElectronicsToMap(x,y,z){
+	var marker = L.marker([x,y]).addTo(mymap).bindPopop(z);
   marker.addTo(markers);
 }
 
@@ -41,6 +80,7 @@ function addToMap(x,y,z){
 		markers.clearLayers();
 	}
 	markers.addTo(mymap);
+
 // SE Buildings
 	/*var SE01 = L.marker([49.251153, -122.999092]).addTo(mymap);
 	var SE02 = L.marker([49.251386, -123.001534]).addTo(mymap);
@@ -120,8 +160,8 @@ function addToMap(x,y,z){
 
 	function onLocationFound(e) {
 	var radius = e.accuracy / 2;
-	
-	
+
+
     var pos = L.marker(e.latlng).addTo(mymap)
 		.bindPopup("You are here").openPopup();
 	pos.addTo(position);

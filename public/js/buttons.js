@@ -16,7 +16,7 @@ wasteButton.addEventListener("click", function(){
   ref.on("child_added", function(snapshot){
     var x = snapshot.val();
     if(x.waste == 1){
-      addToMap(x.BldngLat,x.BldngLong, snapshot.key);
+      addWasteToMap(x.BldngLat,x.BldngLong, snapshot.key);
       }
       console.log("BuildingNo " + snapshot.key);
       console.log("Latitute " + x.BldngLat);
@@ -32,7 +32,7 @@ recyclingButton.addEventListener("click", function(){
   ref.on("child_added", function(snapshot){
     var x = snapshot.val();
     if(x.recycling == 1){
-      addToMap(x.BldngLat,x.BldngLong, snapshot.key);
+      addRecycleToMap(x.BldngLat,x.BldngLong, snapshot.key);
       }
     console.log("BuildingNo " + snapshot.key);
     console.log("Latitute " + x.BldngLat);
@@ -48,7 +48,7 @@ compostButton.addEventListener("click", function(){
   ref.on("child_added", function(snapshot){
     var x = snapshot.val();
     if(x.compost == 1){
-    addToMap(x.BldngLat,x.BldngLong, snapshot.key);
+    addOrganicToMap(x.BldngLat,x.BldngLong, snapshot.key);
     }
       console.log("BuildingNo " + snapshot.key);
       console.log("Latitute " + x.BldngLat);
@@ -64,7 +64,7 @@ paperButton.addEventListener("click", function(){
   ref.on("child_added", function(snapshot){
     var x = snapshot.val();
     if(x.paper == 1){
-      addToMap(x.BldngLat,x.BldngLong, snapshot.key);
+      addPaperToMap(x.BldngLat,x.BldngLong, snapshot.key);
       }
       console.log("BuildingNo " + snapshot.key);
       console.log("Latitute " + x.BldngLat);
