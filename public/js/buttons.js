@@ -12,6 +12,7 @@ var paperButton = document.getElementById("paper");
 // event listeners for the common trash types
 wasteButton.addEventListener("click", function(){
   var ref = myFirebase.ref("BldngInfo");
+  //clears the map of current markers if there are any
   clear()
   ref.on("child_added", function(snapshot){
     var x = snapshot.val();
@@ -47,7 +48,7 @@ compostButton.addEventListener("click", function(){
   clear()
   ref.on("child_added", function(snapshot){
     var x = snapshot.val();
-    if(x.compost == 1){
+    if(x.organic == 1){
     addToMap(x.BldngLat,x.BldngLong, snapshot.key);
     }
       console.log("BuildingNo " + snapshot.key);
