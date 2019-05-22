@@ -1,15 +1,15 @@
 var myfirebase = firebase.database();
-
 var submitButton = document.getElementById("searchButton");
-var input = document.getElementById("search")
+var textInput = document.getElementById("search");
 var buildingList = [];
 var userLat;
 var userLong;
 var nearestVal = 2;
 var nearestBuild;
+var currType = "";
 
 // binds enter key to search
-input.addEventListener("keydown", function(event){
+textInput.addEventListener("keydown", function(event){
   if(event.keyCode == 13){
     event.preventDefault();
     search();
@@ -26,13 +26,15 @@ function search() {
   // resets variables
   buildingList = [];
   nearestVal = 2;
+  currType = "";
   
   // connecting to TrashType database
-  var ref = myfirebase.ref("TrashType");
+  let ref = myfirebase.ref("TrashType");
   ref.orderByKey().equalTo(input).on("child_added", function(snapshot) {
     let x = snapshot.val();
     let type = x.type;
-    console.log(JSON.parse(JSON.stringify(type)));
+    currType = type.toString().toUpperCase();
+    //console.log(JSON.parse(JSON.stringify(type)));
     identifyBuilding(type, findClosest);
     building(type);
   });
@@ -41,11 +43,11 @@ function search() {
 // places the markers on the map
 function building(x){
   clear();
-  console.log("buld");
+  
+  // connecting to BldngInfo database
   let ref = myfirebase.ref("BldngInfo");
   ref.orderByChild(x).equalTo(1).on("child_added", function(snapshot){
     let x = snapshot.val();
-    
     addToMap(x.BldngLat, x.BldngLong);
   });
 }
@@ -55,7 +57,7 @@ function identifyBuilding(trashType, callback) {
   console.log("identifyBuilding executing...");
   let ref = myfirebase.ref("BldngInfo");
   ref.orderByChild(trashType).equalTo(1).on("child_added", function(snapshot) {
-    buildingList.push(snapshot.key);
+    buildingList.push(snapshot.key.toString());
   });
   console.log(JSON.parse(JSON.stringify(buildingList)));
   callback();
@@ -76,8 +78,12 @@ function findClosest() {
         nearestBuild = buildingList[i];
       }
     });
-    setTimeout(console.log(JSON.parse(JSON.stringify("nearestVal: " + nearestVal))));
-    console.log(JSON.parse(JSON.stringify("nearestBuild: " + nearestBuild)));
+  }
+  if (nearestVal == 2) {
+    // do nothing 
+  } else {
+    alert("Closest Building: " + nearestBuild
+         + "\nBin Type: " + currType);
   }
 }
 
@@ -91,5 +97,3 @@ function getLocation() {
     console.log('latitude', userLat, 'longitude', userLong);
   });
 }
-
-
