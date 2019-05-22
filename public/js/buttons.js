@@ -1,9 +1,5 @@
 var myFirebase = firebase.database();
 
-var imported = document.createElement('script');
-imported.src = 'map.js';
-document.head.appendChild(imported);
-
 var wasteButton = document.getElementById("waste");
 var recyclingButton = document.getElementById("recycling");
 var compostButton = document.getElementById("compost");
@@ -13,7 +9,7 @@ var paperButton = document.getElementById("paper");
 wasteButton.addEventListener("click", function(){
   var ref = myFirebase.ref("BldngInfo");
   //clears the map of current markers if there are any
-  clear()
+  clear();
   ref.on("child_added", function(snapshot){
     var x = snapshot.val();
     if(x.waste == 1){
@@ -29,7 +25,7 @@ wasteButton.addEventListener("click", function(){
 
 recyclingButton.addEventListener("click", function(){
   var ref = myFirebase.ref("BldngInfo");
-  clear()
+  clear();
   ref.on("child_added", function(snapshot){
     var x = snapshot.val();
     if(x.recycling == 1){
@@ -45,7 +41,7 @@ recyclingButton.addEventListener("click", function(){
 
 compostButton.addEventListener("click", function(){
   var ref = myFirebase.ref("BldngInfo");
-  clear()
+  clear();
   ref.on("child_added", function(snapshot){
     var x = snapshot.val();
     if(x.organic == 1){
@@ -61,7 +57,7 @@ compostButton.addEventListener("click", function(){
 
 paperButton.addEventListener("click", function(){
   var ref = myFirebase.ref("BldngInfo");
-  clear()
+  clear();
   ref.on("child_added", function(snapshot){
     var x = snapshot.val();
     if(x.paper == 1){
