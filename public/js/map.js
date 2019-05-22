@@ -37,7 +37,7 @@ var markers = L.layerGroup();
 function addToMap(x,y,z,color){
   var marker = L.marker([x,y]).addTo(mymap);
   marker.bindPopup(z);
-  
+
   if(color == "green"){
     marker.setIcon(greenIcon);
   } else if(color == "blue"){
