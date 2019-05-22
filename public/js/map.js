@@ -34,48 +34,31 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var markers = L.layerGroup();
 
 // adds marker to markers layer
-function addRecycleToMap(x,y,z){
-  var marker = L.marker([x,y], {icon: blueIcon}).addTo(mymap).bindPopop(z);
-  marker.addTo(markers);
-}
-
-function addWasteToMap(x,y,z){
-	var marker = L.marker([x,y], {icon: blackIcon}).addTo(mymap).bindPopop(z);
-  marker.addTo(markers);
-}
-
-function addOrganicToMap(x,y,z){
-	var marker = L.marker([x,y], {icon: greenIcon}).addTo(mymap).bindPopop(z);
-  marker.addTo(markers);
-}
-
-function addPaperToMap(x,y,z){
-	var marker = L.marker([x,y], {icon: yellowIcon}).addTo(mymap).bindPopop(z);
-  marker.addTo(markers);
-}
-
-function addRefundToMap(x,y,z){
-	var marker = L.marker([x,y]).addTo(mymap).bindPopop(z);
-  marker.addTo(markers);
-}
-
-function addBatteryToMap(x,y,z){
-	var marker = L.marker([x,y]).addTo(mymap).bindPopop(z);
-  marker.addTo(markers);
-}
-
-function addSPToMap(x,y,z){
-	var marker = L.marker([x,y]).addTo(mymap).bindPopop(z);
-  marker.addTo(markers);
-}
-
-function addClothesToMap(x,y,z){
-	var marker = L.marker([x,y]).addTo(mymap).bindPopop(z);
-  marker.addTo(markers);
-}
-
-function addElectronicsToMap(x,y,z){
-	var marker = L.marker([x,y]).addTo(mymap).bindPopop(z);
+function addToMap(x,y,z,color){
+  var marker = L.marker([x,y]).addTo(mymap);
+  marker.bindPopup(z);
+  
+  if(color == "green"){
+    marker.setIcon(greenIcon);
+  } else if(color == "blue"){
+    marker.setIcon(blueIcon);
+  } else if(color == "yellow"){
+    marker.setIcon(yellowIcon);
+  } else if(color == "black"){
+    marker.setIcon(blackIcon);
+  } else if(color == "red"){
+    marker.setIcon(redIcon);
+  } else if(color == "purple"){
+    marker.setIcon(purpleIcon);
+  } else if(color == "pink"){
+    marker.setIcon(pinkIcon);
+  } else if(color == "cyan"){
+    marker.setIcon(cyanIcon);
+  } else if(color == "orange"){
+    marker.setIcon(orangeIcon);
+  } else if (color == "brown"){
+    marker.setIcon(brownIcon);
+  }
   marker.addTo(markers);
 }
 
