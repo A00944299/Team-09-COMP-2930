@@ -8,6 +8,7 @@ var userLong;
 var nearestVal = 2;
 var nearestBuild;
 
+// binds enter key to search
 input.addEventListener("keydown", function(event){
   if(event.keyCode == 13){
     event.preventDefault();
@@ -15,13 +16,16 @@ input.addEventListener("keydown", function(event){
   }
 });
 
-
 // gets user location immediately after page load and location allowed
 window.onload = getLocation();
 
+// search button function
 function search() {
   let input = document.getElementById("search").value.toLowerCase();
+  
+  // resets variables
   buildingList = [];
+  nearestVal = 2;
   
   // connecting to TrashType database
   var ref = myfirebase.ref("TrashType");
@@ -34,6 +38,7 @@ function search() {
   });
 }
 
+// places the markers on the map
 function building(x){
   clear();
   console.log("buld");
