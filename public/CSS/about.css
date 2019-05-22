@@ -54,19 +54,20 @@ body {
   flex-flow: row;
   justify-content: space-evenly;
 }
-      
+
 #video {
   display: inline-block;
   border-style: solid;
   border-width: 10px;
   border-color: dimgray;
+  width: 90%;
 }
 
-#left {
+#Left {
   width: 50%;
 }
 
-#right {
+#Right {
   width: 50%;
 }
 
@@ -138,28 +139,28 @@ body {
     flex-direction: column;
   }
   
-  #video {
-    height: 320px;
-    width: 600px;
-  }
-  
   .header {
     font-size: 24pt;
     font-weight: bold;
   }
 
-  #right {
+  #Right {
     margin-top: 50px;
+    width: 100%;
+  }
+  
+  #Left {
+    width: 100%;
   }
 
   .text {
-    font-size: 18pt;
+    font-size: 1.2em;
     text-align: left, justify;
   }
   
 }
 
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 500px){
   
   #Taskbar {
     height: auto;
@@ -178,17 +179,11 @@ body {
   }
   
   .text {
-    font-size: 14pt;
+    font-size: 1em;
   }
   
   #Home {
     width: 200px;
-  }
-  
-  #video {
-    /*display: none;*/
-    width: 350px;
-    height: 200px;
   }
 
   .bio {
@@ -196,15 +191,24 @@ body {
     flex-flow: column;
     align-content: center;
   }
+  
+  #Right {
+    width: 100%;
+  }
+  
+  #Left {
+    width: 100%;
+  }
 
   .profile, .information {
     display: inline-block;
     width: 100%;
+    font-size: 1.2em;
   }
   
   .information {
     width: 100%;
-    font-size: 11pt;
+    font-size: 1em;
   }
   
 }
