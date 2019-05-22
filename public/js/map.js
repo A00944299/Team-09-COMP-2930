@@ -30,9 +30,9 @@
 
 	var markers = L.layerGroup();
 
-	function addToMap(x,y){
+	function addToMap(x,y,z){
 		var marker = L.marker([x,y]).addTo(mymap);
-		marker.bindPopup();
+		marker.bindPopup(z);
 		marker.addTo(markers);
 	}
 
@@ -122,7 +122,7 @@
 	
 	
     var pos = L.marker(e.latlng).addTo(mymap)
-		.bindPopup("You are within " + radius + " meters from this point").openPopup();
+		.bindPopup("You are here").openPopup();
 	pos.addTo(position);
     L.circle(e.latlng, radius).addTo(mymap);
 	}
