@@ -30,11 +30,12 @@
 
 	var markers = L.layerGroup();
 
-	function addToMap(x,y,z){
-		var marker = L.marker([x,y]).addTo(mymap);
-		marker.bindPopup(z);
-		marker.addTo(markers);
-	}
+
+function addToMap(x,y,z){
+  var marker = L.marker([x,y]).addTo(mymap);
+  marker.bindPopup(z);
+  marker.addTo(markers);
+}
 
 	function clear(){
 		markers.clearLayers();
