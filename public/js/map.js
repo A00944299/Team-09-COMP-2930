@@ -34,10 +34,31 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var markers = L.layerGroup();
 
 // adds marker to markers layer
-function addToMap(x,y,z){
+function addToMap(x,y,z,color){
   var marker = L.marker([x,y]).addTo(mymap);
   marker.bindPopup(z);
   
+  if(color == "green"){
+    marker.setIcon(greenIcon);
+  } else if(color == "blue"){
+    marker.setIcon(blueIcon);
+  } else if(color == "yellow"){
+    marker.setIcon(yellowIcon);
+  } else if(color == "black"){
+    marker.setIcon(blackIcon);
+  } else if(color == "red"){
+    marker.setIcon(redIcon);
+  } else if(color == "purple"){
+    marker.setIcon(purpleIcon);
+  } else if(color == "pink"){
+    marker.setIcon(pinkIcon);
+  } else if(color == "cyan"){
+    marker.setIcon(cyanIcon);
+  } else if(color == "orange"){
+    marker.setIcon(orangeIcon);
+  } else if (color == "brown"){
+    marker.setIcon(brownIcon);
+  }
   marker.addTo(markers);
 }
 
