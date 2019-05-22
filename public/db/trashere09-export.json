@@ -142,8 +142,8 @@
     },
     
     "SE12" : {
-      "BldngLat"     : 49.249975,
-      "BldngLong"    : -123.000890,
+      "BldngLat"     : 49.249989,
+      "BldngLong"    : -123.001612,
       "waste"        : 1,
       "recycling"    : 1,
       "refundable"   : 1,
