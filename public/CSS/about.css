@@ -1,200 +1,210 @@
 body, h1, p {
-         font-family: sans-serif;
-      }
-      body {
-         padding: 0;
-         margin: 0;
+  font-family: sans-serif;
+}
 
-      }
+body {
+  padding: 0;
+  margin: 0;
+}
 
-         #Taskbar {
-            width: 100%;
-            height: auto;
-            background-color: #D1C8C8;
-         }
+#Taskbar {
+  width: 100%;
+  height: auto;
+  background-color: #D1C8C8;
+}
 
-         #Home{
+#Home{
+  margin: 10px 10px 10px 10px;
+  width: 130px;
+  height: auto;
+}
 
-            margin: 10px 10px 10px 10px;
-            width: 130px;
-            height: auto;
-         }
+#element1 {
+  width: 100%;
+  padding-bottom: 40px;
+  text-align: center;
+  margin: 50px auto;
+  padding-top: 40px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  background-image: url(../Pictures/forest.jpg);
+}
 
+#element2 {
+  border-top: dashed;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  border-bottom: dashed;
+  margin: 50px auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 75%;
+}
 
-      #element1 {
-         width: 100%;
-         padding-bottom: 40px;
-         text-align: center;
-         margin: 50px auto;
-         padding-top: 40px;
-         margin-top: 0;
-         margin-bottom: 25px;
-         background-image: url(../Pictures/forest.jpg);
+#element3 {
+  margin: 60px auto;
+  padding-top: 60px;
+}
 
-      }
+#info {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+      
+#video {
+  display: inline-block;
+  border-style: solid;
+  border-width: 10px;
+  border-color: dimgray;
+}
 
-      #element2 {
-         border-top: dashed;
-         padding-top: 120px;
-         padding-bottom: 120px;
-         border-bottom: dashed;
-         margin: 50px auto;
-         margin-top: 0;
-         margin-bottom: 0;
-         display: flex;
-         flex-direction: row;
-         justify-content: space-evenly;
-         width: 75%;
+#left {
+  width: 50%;
+}
 
+#right {
+  width: 50%;
+}
 
-      }
+.header {
+  text-align: center;
+  font-size: 24pt
+}
 
-      #element3 {
-         margin: 60px auto;
-         padding-top: 60px;
-      }
+.text {
+  text-align: center, justify;
+  margin: 10px 10px;
+}
+      
+.contact {
+  font-size: 14pt;
+}
 
-      #info {
-         display: flex;
-         flex-flow: row;
-         justify-content: space-evenly;
-      }
-      #video {
-         display: inline-block;
-         border-style: solid;
-         border-width: 10px;
-         border-color: dimgray;
-      }
+/* bio css for the picture name description and information*/
+.bio{
+  margin-top: 100px;
+  display: flex;
+  flex-flow: row;
+}
 
-      #left {
-         width: 50%;
-      }
+.picture{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border-color: light  grey;
+  border-width: 2px;
+  border-style: solid;
+  display: inline-block;
+}
 
-      #right {
-         width: 50%;
-      }
+.profile{
+  width: 30%;
+  text-align: center;
+}
 
-      .header {
-         text-align: center;
-         font-size: 24pt
-      }
+.information{
+  width: 60%;
 
-      .text {
-         text-align: center, justify;
-         margin: 10px 10px;
+}
 
-      }
-      .contact {
-         font-size: 14pt;
-      }
+.biotext{
+  margin: 20px 10px;
+}
 
-      /* bio css for the picture name description and information*/
-      .bio{
-         margin-top: 100px;
-         display: flex;
-         flex-flow: row;
-      }
+@media only screen and (max-width: 768px){
 
-      .picture{
-         height: 150px;
-         width: 150px;
-         border-radius: 50%;
-         border-color: light  grey;
-         border-width: 2px;
-         border-style: solid;
-         display: inline-block;
-      }
+  #Home {
+    height: auto;
+    width: 350px;
+  }
 
-      .profile{
-         width: 30%;
-         text-align: center;
-      }
-      .information{
-         width: 60%;
+  #Taskbar {
+    height: auto;
+    min-width: 100%;
+  }
+  
+  #element1 {
+    padding-top: 195px;
+    padding-bottom: 195px;
+    min-width: 768;
+    height: auto;
+  }
+  
+  #element2 {
+    flex-direction: column;
+  }
+  
+  #video {
+    height: 320px;
+    width: 600px;
+  }
+  
+  .header {
+    font-size: 24pt;
+    font-weight: bold;
+  }
 
-      }
-      .biotext{
-         margin: 20px 10px;
-      }
+  #right {
+    margin-top: 50px;
+  }
 
-      @media only screen and (max-width: 768px){
+  .text {
+    font-size: 18pt;
+    text-align: left, justify;
+  }
+  
+}
 
-         #Home {
-            height: auto;
-            width: 350px;
-         }
+@media only screen and (max-width: 420px){
+  
+  #Taskbar {
+    height: auto;
+    min-width: 100%;
+  }
+  
+  #element1 {
+    padding-top: 160px;
+    padding-bottom: 160px;
+    min-width: 100%;
+  }
+  
+  #element2 {
+    padding-top: 30px;
+    flex-direction: column;
+  }
+  
+  .text {
+    font-size: 14pt;
+  }
+  
+  #Home {
+    width: 200px;
+  }
+  
+  #video {
+    /*display: none;*/
+    width: 350px;
+    height: 200px;
+  }
 
-         #Taskbar {
-            height: auto;
-            min-width: 100%;
-         }
-         #element1 {
-            padding-top: 195px;
-            padding-bottom: 195px;
-            min-width: 768;
-            height: auto;
-         }
-         #element2 {
-            flex-direction: column;
-         }
-         #video {
-            height: 320px;
-            width: 600px;
-         }
-         .header {
-            font-size: 24pt;
-            font-weight: bold;
-         }
+  .bio {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+  }
 
-         #Right {
-            margin-top: 50px;
-         }
-
-         .text {
-            font-size: 18pt;
-            text-align: left, justify;
-
-         }
-      }
-
-      @media only screen and (max-width: 420px){
-         #Taskbar {
-            height: auto;
-            min-width: 100%;
-         }
-         #element1 {
-            padding-top: 160px;
-            padding-bottom: 160px;
-            min-width: 100%;
-         }
-         #element2 {
-            padding-top: 30px;
-            flex-direction: column;
-         }
-         .text {
-            font-size: 14pt;
-         }
-         #Home {
-            width: 200px;
-         }
-         #video {
-            /*display: none;*/
-            width: 350px;
-            height: 200px;
-         }
-         
-         .bio {
-            display: flex;
-            flex-flow: column;
-            align-content: center;
-         }
-         
-         .profile, .information {
-            display: inline-block;
-            width: 100%;
-         }
-         .information {
-            width: 100%;
-            font-size: 11pt;
-         }
-      }
+  .profile, .information {
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .information {
+    width: 100%;
+    font-size: 11pt;
+  }
+  
+}
