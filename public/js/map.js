@@ -30,7 +30,7 @@
 
 	var markers = L.layerGroup();
 
-	function addToMap(x,y){
+	function addToMap(x, y){
 		var marker = L.marker([x,y]).addTo(mymap);
 		marker.bindPopup();
 		marker.addTo(markers);

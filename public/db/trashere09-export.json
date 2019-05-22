@@ -2,8 +2,8 @@
   "BldngInfo" : {
     
     "SW01" : {
-      "BldngLat"     : 49.251216,
-      "BldngLong"    : -123.002808,
+      "BldngLat"     : 49.251174,
+      "BldngLong"    : -123.002779,
       "waste"        : 1,
       "recycling"    : 1,
       "refundable"   : 1,
@@ -16,8 +16,8 @@
     },
     
     "SW02" : {
-      "BldngLat"     : 49.250386,
-      "BldngLong"    : -123.003513,
+      "BldngLat"     : 49.250393,
+      "BldngLong"    : -123.003468,
       "waste"        : 1,
       "recycling"    : 1,
       "refundable"   : 1,
@@ -72,8 +72,8 @@
     },
     
     "SE01" : {
-      "BldngLat"     : 49.251005,
-      "BldngLong"    : -122.999052,
+      "BldngLat"     : 49.251153,
+      "BldngLong"    : -122.999092,
       "waste"        : 1,
       "recycling"    : 1,
       "refundable"   : 1,
@@ -143,7 +143,7 @@
     
     "SE12" : {
       "BldngLat"     : 49.249975,
-      "BldngLong"    : -123.001612,
+      "BldngLong"    : -123.000890,
       "waste"        : 1,
       "recycling"    : 1,
       "refundable"   : 1,

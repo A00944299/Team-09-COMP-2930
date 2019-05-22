@@ -35,15 +35,15 @@ function search() {
     let type = x.type;
     currType = type.toString().toUpperCase();
     //console.log(JSON.parse(JSON.stringify(type)));
-    identifyBuilding(type, findClosest);
+    //identifyBuilding(type, findClosest);
     building(type);
+    alert("BIN: " + currType);
   });
 }
 
 // places the markers on the map
 function building(x){
   clear();
-  
   // connecting to BldngInfo database
   let ref = myfirebase.ref("BldngInfo");
   ref.orderByChild(x).equalTo(1).on("child_added", function(snapshot){
