@@ -1,3 +1,5 @@
+    /* General body styling */
+
     body, h1, h2, h3, h4, h5, h6 {
 		font-family: "Verdana", sans-serif;
 	}
@@ -9,7 +11,7 @@
         margin: 0;
     }
 
-    /* the top bar */
+    /* Styling the taskbar */
 
 	#top{
 		width: 100%;
@@ -39,7 +41,7 @@
         margin-right: 10px;
     }
     
-    /* Holds the content from the image to the circle buttons */
+    /* Holds the content in the middle section, including the image */
 
     #content {
         padding: 6px 3px 0px 3px;
@@ -52,7 +54,7 @@
         height: auto;
     }
 
-    /* Holding the circles */
+    /* Holding the buttons */
     
     #row {            
         display: flex;
@@ -97,7 +99,7 @@
         color: #000;
     }
 
-    /* the map */
+    /* Container for map and the id linked to its JavaScript file */
 
     #mapcontainer {
         text-align: center; 
@@ -109,7 +111,7 @@
         
     }
 
-    /* the searchbar */
+    /* The Searchbar */
     
     #searchbar {
         text-align: center;
@@ -147,7 +149,7 @@
         color: #DAD8D1;
     }
 
-    /* making things responsive on lower screen size */    
+    /* Making things responsive on lower screen size */    
 
     @media only screen and (max-width: 900px) {
         #mapid {
