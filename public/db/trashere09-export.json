@@ -349,15 +349,15 @@
     },
 
     "beer bottles" : {
-      "type" : "recycling"
+      "type" : "refundable"
     },
 
     "beer cans" : {
-      "type" : "recycling"
+      "type" : "refundable"
     },
 
     "beverage containers" : {
-      "type" : "recycling"
+      "type" : "refundable"
     },
 
     "bike Frame" : {
@@ -982,6 +982,10 @@
     
     "vegetables" : {
         "type" : "organic"
+    },
+    
+    "water bottle" : {
+      "type" : "refundable"
     },
     
     "wallpaper" : {

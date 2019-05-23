@@ -13,6 +13,17 @@ var colorIcons = L.Icon.extend({
   }
 });
 
+var ufoIcon = L.Icon.extend({
+  options: {
+    iconSize:     [30, 30],   // size of the icon
+    iconAnchor:   [12, 30],   // point of the icon which will correspond to marker's location
+    popupAnchor:  [0.5, -30], // point from which the popup should open relative to the iconAnchor
+    shadowUrl:    null,
+    shadowSize:   null,  // size of the shadow
+    shadowAnchor: null,  // the same for the shadow
+  }
+});
+
 // colorful markers
 var greenIcon = new colorIcons({iconUrl: "Pictures/green.png"});
 var redIcon = new colorIcons({iconUrl: "Pictures/red.png"});
@@ -70,8 +81,10 @@ function clear(){
 // adds markers layer into map
 markers.addTo(mymap);
 
-
-/*EasterEgg.bindPopup("<b>This is where you find elephant waste</b>");*/
+// EASTER EGG
+var ufo = new ufoIcon({iconUrl: 'Pictures/ufo.png'});
+var EasterEgg = L.marker([37.237253, -115.802245], {icon: ufo}).addTo(mymap);
+EasterEgg.bindPopup("<b>Area 51</b>");
 
 // user location
 var position = L.layerGroup();
