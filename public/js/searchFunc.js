@@ -29,10 +29,10 @@ function search() {
   currType = "";
   
   // connecting to TrashType database
-  let ref = myfirebase.ref("TrashType");
+  var ref = myfirebase.ref("TrashType");
   ref.orderByKey().equalTo(input).on("child_added", function(snapshot) {
-    let x = snapshot.val();
-    let type = x.type.toString();
+    var x = snapshot.val();
+    var type = x.type.toString();
     currType = type.toString().toUpperCase();
     //console.log(JSON.parse(JSON.stringify(type)));
     //identifyBuilding(type, findClosest);
@@ -43,20 +43,20 @@ function search() {
 
 // places the markers on the map
 function building(x){
-  let c = "";
-  let z = x.toString();
+  var c = "";
+  var z = x.toString();
   console.log(z);
   clear();
   // connecting to BldngInfo database
-  let ref = myfirebase.ref("BldngInfo");
+  var ref = myfirebase.ref("BldngInfo");
   switch(x){
-    case "waste" : 
+    case "waste":
      c = "black"
      break;
     case "organic":
       c = "green"
       break;
-    case "paper" :
+    case "paper":
       c = "yellow"
       break;
     case "recycling":
@@ -74,12 +74,12 @@ function building(x){
     case "clothesDrop":
       c = "brown"
       break;
-    case "refundable" :
+    case "refundable":
       c = "orange"
       break;
   }
   ref.orderByChild(x).equalTo(1).on("child_added", function(snapshot){
-    let x = snapshot.val();
+    var x = snapshot.val();
     addToMap(x.BldngLat, x.BldngLong, snapshot.key,c);
   });
 }
@@ -87,7 +87,7 @@ function building(x){
 // gets all builings that have the bin available and adds into an array
 function identifyBuilding(trashType, callback) {
   console.log("identifyBuilding executing...");
-  let ref = myfirebase.ref("BldngInfo");
+  var ref = myfirebase.ref("BldngInfo");
   ref.orderByChild(trashType).equalTo(1).on("child_added", function(snapshot) {
     buildingList.push(snapshot.key.toString());
   });
@@ -98,12 +98,12 @@ function identifyBuilding(trashType, callback) {
 // gets latitude and longitude of each building
 function findClosest() {
   console.log("findClosest executing...");
-  for (let i = 0; i < buildingList.length; i++) {
-    let ref = myfirebase.ref("BldngInfo");
+  for (var i = 0; i < buildingList.length; i++) {
+    var ref = myfirebase.ref("BldngInfo");
     ref.orderByKey().equalTo(buildingList[i]).on("child_added", function(snapshot) {
-      let x = snapshot.val();
+      var x = snapshot.val();
       //console.log(snapshot.key);
-      let temp = (userLat - x.BldngLat) + (userLong - x.BldngLong);
+      var temp = (userLat - x.BldngLat) + (userLong - x.BldngLong);
       console.log(JSON.parse(JSON.stringify(temp)));
       if (temp < nearestVal) {
         nearestVal = temp;

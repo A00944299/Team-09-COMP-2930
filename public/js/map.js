@@ -1,32 +1,32 @@
 // initial map view
-var mymap = L.map('mapid').setView([49.250586, -123.003005], 15);
+var mymap = L.map("mapid").setView([49.250586, -123.003005], 15);
 
 // color icon properties
 var colorIcons = L.Icon.extend({
   options: {
-    iconSize:     [21, 35],   // size of the icon
-    iconAnchor:   [12, 30],   // point of the icon which will correspond to marker's location
-    popupAnchor:  [0.5, -30], // point from which the popup should open relative to the iconAnchor
-    shadowUrl:    null,
-    shadowSize:   null,  // size of the shadow
+    iconSize: [21, 35], // size of the icon
+    iconAnchor: [12, 30], // point of the icon which will correspond to marker's location
+    popupAnchor: [0.5, -30], // point from which the popup should open relative to the iconAnchor
+    shadowUrl: null,
+    shadowSize: null,  // size of the shadow
     shadowAnchor: null,  // the same for the shadow
   }
 });
 
 // colorful markers
-var greenIcon = new colorIcons({iconUrl: 'Pictures/green.png'});
-var redIcon = new colorIcons({iconUrl: 'Pictures/red.png'});
-var	blueIcon = new colorIcons({iconUrl: 'Pictures/blue.png'});
-var	yellowIcon = new colorIcons({iconUrl: 'Pictures/yellow.png'});
-var	purpleIcon = new colorIcons({iconUrl: 'Pictures/purple.png'});
-var	brownIcon = new colorIcons({iconUrl: 'Pictures/brown.png'});
-var	pinkIcon = new colorIcons({iconUrl: 'Pictures/pink.png'});
-var	orangeIcon = new colorIcons({iconUrl: 'Pictures/orange.png'});
-var	cyanIcon = new colorIcons({iconUrl: 'Pictures/cyan.png'});
-var	blackIcon = new colorIcons({iconUrl: 'Pictures/black.png'});
+var greenIcon = new colorIcons({iconUrl: "Pictures/green.png"});
+var redIcon = new colorIcons({iconUrl: "Pictures/red.png"});
+var	blueIcon = new colorIcons({iconUrl: "Pictures/blue.png"});
+var	yellowIcon = new colorIcons({iconUrl: "Pictures/yellow.png"});
+var	purpleIcon = new colorIcons({iconUrl: "Pictures/purple.png"});
+var	brownIcon = new colorIcons({iconUrl: "Pictures/brown.png"});
+var	pinkIcon = new colorIcons({iconUrl: "Pictures/pink.png"});
+var	orangeIcon = new colorIcons({iconUrl: "Pictures/orange.png"});
+var	cyanIcon = new colorIcons({iconUrl: "Pictures/cyan.png"});
+var	blackIcon = new colorIcons({iconUrl: "Pictures/black.png"});
 
 // map fine print
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(mymap);
 
@@ -90,11 +90,11 @@ function onLocationFound(e) {
   L.circle(e.latlng, radius).addTo(mymap);
 }
 
-mymap.on('locationfound', onLocationFound);
+mymap.on("locationfound", onLocationFound);
 
 // location error handling
 function onLocationError(e) {
   alert(e.message);
 }
 
-mymap.on('locationerror', onLocationError);
+mymap.on("locationerror", onLocationError);
