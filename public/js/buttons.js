@@ -6,6 +6,7 @@ var compostButton = document.getElementById("compost");
 var paperButton = document.getElementById("paper");
 
 // event listeners for the common trash types
+// WASTE
 wasteButton.addEventListener("click", function(){
   var ref = myFirebase.ref("BldngInfo");
   //clears the map of current markers if there are any
@@ -15,14 +16,10 @@ wasteButton.addEventListener("click", function(){
     if(x.waste == 1){
       addToMap(x.BldngLat,x.BldngLong, snapshot.key, "black");
       }
-      console.log("BuildingNo " + snapshot.key);
-      console.log("Latitute " + x.BldngLat);
-      console.log("Longitude " + x.BldngLong)
-      console.log("Garbage? " + x.waste)
   });
 });
 
-
+// RECYCLING
 recyclingButton.addEventListener("click", function(){
   var ref = myFirebase.ref("BldngInfo");
   clear();
@@ -31,14 +28,10 @@ recyclingButton.addEventListener("click", function(){
     if(x.recycling == 1){
       addToMap(x.BldngLat,x.BldngLong, snapshot.key, "blue");
       }
-    console.log("BuildingNo " + snapshot.key);
-    console.log("Latitute " + x.BldngLat);
-    console.log("Longitude " + x.BldngLong)
-    console.log("Recyling " + x.recycling)
   });
 });
 
-
+// COMPOST
 compostButton.addEventListener("click", function(){
   var ref = myFirebase.ref("BldngInfo");
   clear();
@@ -47,14 +40,10 @@ compostButton.addEventListener("click", function(){
     if(x.organic == 1){
     addToMap(x.BldngLat,x.BldngLong, snapshot.key, "green");
     }
-      console.log("BuildingNo " + snapshot.key);
-      console.log("Latitute " + x.BldngLat);
-      console.log("Longitude " + x.BldngLong)
-      console.log("Compost? " + x.organic)
   });
 });
 
-
+//PAPER
 paperButton.addEventListener("click", function(){
   var ref = myFirebase.ref("BldngInfo");
   clear();
@@ -63,9 +52,5 @@ paperButton.addEventListener("click", function(){
     if(x.paper == 1){
       addToMap(x.BldngLat,x.BldngLong, snapshot.key, "yellow");
       }
-      console.log("BuildingNo " + snapshot.key);
-      console.log("Latitute " + x.BldngLat);
-      console.log("Longitude " + x.BldngLong)
-      console.log("Paper " + x.paper)
   });
 });

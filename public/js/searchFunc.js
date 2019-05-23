@@ -86,7 +86,6 @@ function building(x){
 
 // gets all builings that have the bin available and adds into an array
 function identifyBuilding(trashType, callback) {
-  console.log("identifyBuilding executing...");
   let ref = myfirebase.ref("BldngInfo");
   ref.orderByChild(trashType).equalTo(1).on("child_added", function(snapshot) {
     buildingList.push(snapshot.key.toString());
@@ -97,7 +96,6 @@ function identifyBuilding(trashType, callback) {
 
 // gets latitude and longitude of each building
 function findClosest() {
-  console.log("findClosest executing...");
   for (let i = 0; i < buildingList.length; i++) {
     let ref = myfirebase.ref("BldngInfo");
     ref.orderByKey().equalTo(buildingList[i]).on("child_added", function(snapshot) {
